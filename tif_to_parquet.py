@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import glob
 import time
+import random
 
 # Record the start time
 start_time = time.time()
@@ -28,6 +29,12 @@ os.makedirs(out, exist_ok = True)
 all_files_mtbs =  glob.glob('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_proj_mtbs/*.tif')
 
 all_files_nbac =  glob.glob('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_proj/*.tif')
+
+#too many files for nbac, need to sample\
+#50% sample size
+sample_size = len(all_files_nbac) // 2
+
+all_files_nbac = random.sample(all_files_nbac, sample_size)
 
 # #empty list for combining all data
 # combined_training = []

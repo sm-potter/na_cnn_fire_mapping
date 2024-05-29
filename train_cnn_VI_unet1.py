@@ -221,28 +221,27 @@ optimizer = tensorflow.keras.optimizers.Adam(learning_rate=LR) #this is 1e-3, de
     
 #callbacks to save only best model, what to monitor for early stopping and reduce learning rate etc. 
 callbacks = [tensorflow.keras.callbacks.ModelCheckpoint(
-    filepath="/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm.tf",
+    filepath="/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm_unet1",
 #     verbose=1,
     save_weights_only=False,
     save_best_only=True,
-    monitor='val_unet_output_final_activation_iou_score',
+    monitor='val_iou_score',
     mode = 'max'),
-    tensorflow.keras.callbacks.EarlyStopping(monitor='val_unet_output_final_activation_iou_score', mode = 'max',  patience=20),
-    tensorflow.keras.callbacks.ReduceLROnPlateau(monitor='val_unet_output_final_activation_loss', factor=0.5, patience=5, min_lr=1e-6, verbose=1)]
+    tensorflow.keras.callbacks.EarlyStopping(monitor='val_iou_score', mode = 'max',  patience=20),
+    tensorflow.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=5, min_lr=1e-6, verbose=1)]
 
 #training loop
 # Open a strategy scope, to use multiple gpus
 with strategy.scope():
 
-    model_unet_from_scratch = models.unet_plus_2d((None, None, 3), filter_num= [16,32,64,128], #make smaller64, 128, 256, 512,[16, 32, 64, 128]
+    model_unet_from_scratch = models.unet_2d((None, None, 3), filter_num= [16,32,64,128], #make smaller64, 128, 256, 512,[16, 32, 64, 128]
                        n_labels=num_classes, 
                        stack_num_down=2, stack_num_up=2, 
                        activation='ReLU', 
                        output_activation='Sigmoid', 
                        batch_norm=True, pool=False, unpool=False, 
                        backbone='EfficientNetB7', weights=None, 
-                       freeze_backbone=False, freeze_batch_norm=False, 
-                       deep_supervision = True,
+                       freeze_backbone=False, freeze_batch_norm=False,
                        name='unet')
 
     model_unet_from_scratch.compile(loss='binary_crossentropy',
@@ -262,27 +261,27 @@ history = model_unet_from_scratch.fit(
     verbose = 0) 
 
 #save final model
-model_unet_from_scratch.save("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm.tf")
+model_unet_from_scratch.save("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm_unet1.tf")
 
 
 history_dict = history.history
 
 #training/val results
-result = pd.DataFrame({'Precision': history_dict["unet_output_final_activation_precision"],
-                       'Val_Precision': history_dict['val_unet_output_final_activation_precision'],
-                       'Recall': history_dict["unet_output_final_activation_recall"],
-                       'Val_Recall': history_dict['val_unet_output_final_activation_recall'],
-                       'F1': history_dict["unet_output_final_activation_f1-score"],
-                       'Val_F1': history_dict['val_unet_output_final_activation_f1-score'],
-                       'IOU': history_dict["unet_output_final_activation_iou_score"],
-                       'Val_IOU': history_dict['val_unet_output_final_activation_iou_score'],
-                       'Loss': history_dict['unet_output_final_activation_loss'],
-                       'Val_Loss': history_dict['val_unet_output_final_activation_loss'],
-                      'Accuracy': history_dict['unet_output_final_activation_accuracy'],
-                       'Val_Accuracy': history_dict['val_unet_output_final_activation_accuracy']})
+result = pd.DataFrame({'Precision': history_dict["precision"],
+                       'Val_Precision': history_dict['val_precision'],
+                       'Recall': history_dict["recall"],
+                       'Val_Recall': history_dict['recall'],
+                       'F1': history_dict["f1-score"],
+                       'Val_F1': history_dict['val_f1-score'],
+                       'IOU': history_dict["iou_score"],
+                       'Val_IOU': history_dict['val_iou_score'],
+                       'Loss': history_dict['loss'],
+                       'Val_Loss': history_dict['val_loss'],
+                       'Accuracy': history_dict['accuracy'],
+                       'Val_Accuracy': history_dict['val_accuracy']})
 
 #save to csv
-result.to_csv("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_mtbs_regularize_50_global_norm.csv")
+result.to_csv("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_mtbs_regularize_50_global_norm_unet1.csv")
 
 
 

@@ -32,9 +32,9 @@ all_files_nbac =  glob.glob('/explore/nobackup/people/spotter5/cnn_mapping/nbac_
 
 #too many files for nbac, need to sample\
 #50% sample size
-sample_size = len(all_files_nbac) // 2
+# sample_size = len(all_files_nbac) // 2
 
-all_files_nbac = random.sample(all_files_nbac, sample_size)
+# all_files_nbac = random.sample(all_files_nbac, sample_size)
 
 # #empty list for combining all data
 # combined_training = []
@@ -125,8 +125,10 @@ for f in all_files_nbac:
     
     # print(f)
     try:
-        #read in file and convert to numpy
-        in_file = rioxarray.open_rasterio(os.path.join('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_proj_nbac', f)).to_numpy().astype(np.int16)
+        # read in file and convert to numpy
+        # in_file = rioxarray.open_rasterio(os.path.join('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_proj', f)).to_numpy().astype(np.int16)
+        in_file = rioxarray.open_rasterio(os.path.join(f)).to_numpy().astype(float)
+
 
         #convert to band last
         in_file= np.moveaxis(in_file, 0, 2) 

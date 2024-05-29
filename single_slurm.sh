@@ -5,7 +5,7 @@
 #SBATCH --qos=long
 #SBATCH --time=5-0
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=30G
+#SBATCH --mem-per-cpu=600G
 ##SBATCH -G4
 #SBATCH -G0
 
@@ -29,8 +29,8 @@
 # python /home/spotter5/cnn_mapping/v5/train_cnn_VI_regularize_85.py 
 
 # python /home/spotter5/cnn_mapping/v5/train_cnn_VI_3p_regularize.py
-# python /home/spotter5/cnn_mapping/v5/tif_to_parquet.py 
-python /home/spotter5/cnn_mapping/na_cnn_fire_mapping/download_training_landsat_no_shift.py
+python /home/spotter5/cnn_mapping/v5/tif_to_parquet.py 
+# python /home/spotter5/cnn_mapping/na_cnn_fire_mapping/download_training_landsat_no_shift.py
 
 
 

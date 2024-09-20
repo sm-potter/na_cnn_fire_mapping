@@ -1,0 +1,2 @@
+python: can't open file '/home/spotter5/cnn_mapping/na_cnn_fire_mapping/train_cnn_VI_net3.py': [Errno 2] No such file or directory
+slurmstepd: error: *** JOB 38287232 ON gpu005 CANCELLED AT 2024-06-12T16:09:53 ***

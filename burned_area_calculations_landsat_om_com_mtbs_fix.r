@@ -60,7 +60,7 @@ for(f in in_files){
             #mtbs for fixing
             mtbs = rast(file.path(mtbs_path, paste0('mtbs_AK_', year, '.tif')))
 
-            #anything but 1 turn to NA
+            #anything but 1 turn to NA, 1 is low to unburned
             mtbs[mtbs!=1] = NA
             
             lfdb = rast(file.path(landsat_ba_path, f))[[3]]

@@ -1,0 +1,2362 @@
+/home/spotter5/.conda/envs/gee_ml/lib/python3.10/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+/home/spotter5/cnn_mapping/na_cnn_fire_mapping/download_training_landsat_no_shift_mtbs.py:99: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  l5['band.or.si']=pd.Categorical(l5['band.or.si'],categories=bands)
+File mtbs_old/median_411 does not exist
+Downloading mtbs_old/median_411
+File mtbs_old/median_512 does not exist
+Downloading mtbs_old/median_512
+File mtbs_old/median_592 does not exist
+Downloading mtbs_old/median_592
+File mtbs_old/median_656 does not exist
+Downloading mtbs_old/median_656
+File mtbs_old/median_1029 does not exist
+Downloading mtbs_old/median_1029
+File mtbs_old/median_1123 does not exist
+Downloading mtbs_old/median_1123
+File mtbs_old/median_75 does not exist
+Downloading mtbs_old/median_75
+File mtbs_old/median_100 does not exist
+Downloading mtbs_old/median_100
+File mtbs_old/median_111 does not exist
+Downloading mtbs_old/median_111
+File mtbs_old/median_136 does not exist
+Downloading mtbs_old/median_136
+File mtbs_old/median_217 does not exist
+Downloading mtbs_old/median_217
+File mtbs_old/median_953 does not exist
+Downloading mtbs_old/median_953
+File mtbs_old/median_969 does not exist
+Downloading mtbs_old/median_969
+File mtbs_old/median_269 does not exist
+Downloading mtbs_old/median_269
+File mtbs_old/median_268 does not exist
+Downloading mtbs_old/median_268
+File mtbs_old/median_271 does not exist
+Downloading mtbs_old/median_271
+File mtbs_old/median_282 does not exist
+Downloading mtbs_old/median_282
+File mtbs_old/median_286 does not exist
+Downloading mtbs_old/median_286
+File mtbs_old/median_359 does not exist
+Downloading mtbs_old/median_359
+File mtbs_old/median_358 does not exist
+Downloading mtbs_old/median_358
+File mtbs_old/median_360 does not exist
+Downloading mtbs_old/median_360
+File mtbs_old/median_390 does not exist
+Downloading mtbs_old/median_390
+File mtbs_old/median_352 does not exist
+Downloading mtbs_old/median_352
+File mtbs_old/median_361 does not exist
+Downloading mtbs_old/median_361
+File mtbs_old/median_353 does not exist
+Downloading mtbs_old/median_353
+File mtbs_old/median_362 does not exist
+Downloading mtbs_old/median_362
+File mtbs_old/median_392 does not exist
+Downloading mtbs_old/median_392
+File mtbs_old/median_402 does not exist
+Downloading mtbs_old/median_402
+File mtbs_old/median_401 does not exist
+Downloading mtbs_old/median_401
+File mtbs_old/median_403 does not exist
+Downloading mtbs_old/median_403
+File mtbs_old/median_480 does not exist
+Downloading mtbs_old/median_480
+File mtbs_old/median_936 does not exist
+Downloading mtbs_old/median_936
+File mtbs_old/median_571 does not exist
+Downloading mtbs_old/median_571
+File mtbs_old/median_513 does not exist
+Downloading mtbs_old/median_513
+File mtbs_old/median_561 does not exist
+Downloading mtbs_old/median_561
+File mtbs_old/median_514 does not exist
+Downloading mtbs_old/median_514
+File mtbs_old/median_589 does not exist
+Downloading mtbs_old/median_589
+File mtbs_old/median_582 does not exist
+Downloading mtbs_old/median_582
+File mtbs_old/median_583 does not exist
+Downloading mtbs_old/median_583
+File mtbs_old/median_608 does not exist
+Downloading mtbs_old/median_608
+File mtbs_old/median_594 does not exist
+Downloading mtbs_old/median_594
+File mtbs_old/median_642 does not exist
+Downloading mtbs_old/median_642
+File mtbs_old/median_636 does not exist
+Downloading mtbs_old/median_636
+File mtbs_old/median_643 does not exist
+Downloading mtbs_old/median_643
+File mtbs_old/median_644 does not exist
+Downloading mtbs_old/median_644
+File mtbs_old/median_624 does not exist
+Downloading mtbs_old/median_624
+File mtbs_old/median_625 does not exist
+Downloading mtbs_old/median_625
+File mtbs_old/median_626 does not exist
+Downloading mtbs_old/median_626
+File mtbs_old/median_628 does not exist
+Downloading mtbs_old/median_628
+File mtbs_old/median_629 does not exist
+Downloading mtbs_old/median_629
+File mtbs_old/median_645 does not exist
+Downloading mtbs_old/median_645
+File mtbs_old/median_657 does not exist
+Downloading mtbs_old/median_657
+File mtbs_old/median_653 does not exist
+Downloading mtbs_old/median_653
+File mtbs_old/median_654 does not exist
+Downloading mtbs_old/median_654
+File mtbs_old/median_655 does not exist
+Downloading mtbs_old/median_655
+File mtbs_old/median_665 does not exist
+Downloading mtbs_old/median_665
+File mtbs_old/median_666 does not exist
+Downloading mtbs_old/median_666
+File mtbs_old/median_652 does not exist
+Downloading mtbs_old/median_652
+File mtbs_old/median_667 does not exist
+Downloading mtbs_old/median_667
+File mtbs_old/median_651 does not exist
+Downloading mtbs_old/median_651
+File mtbs_old/median_658 does not exist
+Downloading mtbs_old/median_658
+File mtbs_old/median_650 does not exist
+Downloading mtbs_old/median_650
+File mtbs_old/median_951 does not exist
+Downloading mtbs_old/median_951
+File mtbs_old/median_659 does not exist
+Downloading mtbs_old/median_659
+File mtbs_old/median_27 does not exist
+Downloading mtbs_old/median_27
+File mtbs_old/median_34 does not exist
+Downloading mtbs_old/median_34
+File mtbs_old/median_38 does not exist
+Downloading mtbs_old/median_38
+File mtbs_old/median_39 does not exist
+Downloading mtbs_old/median_39
+File mtbs_old/median_28 does not exist
+Downloading mtbs_old/median_28
+File mtbs_old/median_40 does not exist
+Downloading mtbs_old/median_40
+File mtbs_old/median_25 does not exist
+Downloading mtbs_old/median_25
+File mtbs_old/median_41 does not exist
+Downloading mtbs_old/median_41
+File mtbs_old/median_29 does not exist
+Downloading mtbs_old/median_29
+File mtbs_old/median_37 does not exist
+Downloading mtbs_old/median_37
+File mtbs_old/median_24 does not exist
+Downloading mtbs_old/median_24
+File mtbs_old/median_31 does not exist
+Downloading mtbs_old/median_31
+File mtbs_old/median_35 does not exist
+Downloading mtbs_old/median_35
+File mtbs_old/median_36 does not exist
+Downloading mtbs_old/median_36
+File mtbs_old/median_33 does not exist
+Downloading mtbs_old/median_33
+File mtbs_old/median_710 does not exist
+Downloading mtbs_old/median_710
+File mtbs_old/median_728 does not exist
+Downloading mtbs_old/median_728
+File mtbs_old/median_697 does not exist
+Downloading mtbs_old/median_697
+File mtbs_old/median_700 does not exist
+Downloading mtbs_old/median_700
+File mtbs_old/median_741 does not exist
+Downloading mtbs_old/median_741
+File mtbs_old/median_756 does not exist
+Downloading mtbs_old/median_756
+File mtbs_old/median_758 does not exist
+Downloading mtbs_old/median_758
+File mtbs_old/median_757 does not exist
+Downloading mtbs_old/median_757
+File mtbs_old/median_763 does not exist
+Downloading mtbs_old/median_763
+File mtbs_old/median_1077 does not exist
+Downloading mtbs_old/median_1077
+File mtbs_old/median_1082 does not exist
+Downloading mtbs_old/median_1082
+File mtbs_old/median_1134 does not exist
+Downloading mtbs_old/median_1134
+File mtbs_old/median_938 does not exist
+Downloading mtbs_old/median_938
+File mtbs_old/median_76 does not exist
+Downloading mtbs_old/median_76
+File mtbs_old/median_68 does not exist
+Downloading mtbs_old/median_68
+File mtbs_old/median_77 does not exist
+Downloading mtbs_old/median_77
+File mtbs_old/median_69 does not exist
+Downloading mtbs_old/median_69
+File mtbs_old/median_70 does not exist
+Downloading mtbs_old/median_70
+File mtbs_old/median_71 does not exist
+Downloading mtbs_old/median_71
+File mtbs_old/median_78 does not exist
+Downloading mtbs_old/median_78
+File mtbs_old/median_79 does not exist
+Downloading mtbs_old/median_79
+File mtbs_old/median_80 does not exist
+Downloading mtbs_old/median_80
+File mtbs_old/median_99 does not exist
+Downloading mtbs_old/median_99
+File mtbs_old/median_72 does not exist
+Downloading mtbs_old/median_72
+File mtbs_old/median_101 does not exist
+Downloading mtbs_old/median_101
+File mtbs_old/median_102 does not exist
+Downloading mtbs_old/median_102
+File mtbs_old/median_103 does not exist
+Downloading mtbs_old/median_103
+File mtbs_old/median_104 does not exist
+Downloading mtbs_old/median_104
+File mtbs_old/median_105 does not exist
+Downloading mtbs_old/median_105
+File mtbs_old/median_109 does not exist
+Downloading mtbs_old/median_109
+File mtbs_old/median_112 does not exist
+Downloading mtbs_old/median_112
+File mtbs_old/median_954 does not exist
+Downloading mtbs_old/median_954
+File mtbs_old/median_955 does not exist
+Downloading mtbs_old/median_955
+File mtbs_old/median_113 does not exist
+Downloading mtbs_old/median_113
+File mtbs_old/median_114 does not exist
+Downloading mtbs_old/median_114
+File mtbs_old/median_115 does not exist
+Downloading mtbs_old/median_115
+File mtbs_old/median_116 does not exist
+Downloading mtbs_old/median_116
+File mtbs_old/median_117 does not exist
+Downloading mtbs_old/median_117
+File mtbs_old/median_137 does not exist
+Downloading mtbs_old/median_137
+File mtbs_old/median_142 does not exist
+Downloading mtbs_old/median_142
+File mtbs_old/median_143 does not exist
+Downloading mtbs_old/median_143
+File mtbs_old/median_144 does not exist
+Downloading mtbs_old/median_144
+File mtbs_old/median_171 does not exist
+Downloading mtbs_old/median_171
+File mtbs_old/median_180 does not exist
+Downloading mtbs_old/median_180
+File mtbs_old/median_181 does not exist
+Downloading mtbs_old/median_181
+File mtbs_old/median_182 does not exist
+Downloading mtbs_old/median_182
+File mtbs_old/median_960 does not exist
+Downloading mtbs_old/median_960
+File mtbs_old/median_183 does not exist
+Downloading mtbs_old/median_183
+File mtbs_old/median_176 does not exist
+Downloading mtbs_old/median_176
+File mtbs_old/median_184 does not exist
+Downloading mtbs_old/median_184
+File mtbs_old/median_220 does not exist
+Downloading mtbs_old/median_220
+File mtbs_old/median_935 does not exist
+Downloading mtbs_old/median_935
+File mtbs_old/median_185 does not exist
+Downloading mtbs_old/median_185
+File mtbs_old/median_186 does not exist
+Downloading mtbs_old/median_186
+File mtbs_old/median_187 does not exist
+Downloading mtbs_old/median_187
+File mtbs_old/median_188 does not exist
+Downloading mtbs_old/median_188
+File mtbs_old/median_189 does not exist
+Downloading mtbs_old/median_189
+File mtbs_old/median_190 does not exist
+Downloading mtbs_old/median_190
+File mtbs_old/median_964 does not exist
+Downloading mtbs_old/median_964
+File mtbs_old/median_1174 does not exist
+Downloading mtbs_old/median_1174
+File mtbs_old/median_191 does not exist
+Downloading mtbs_old/median_191
+File mtbs_old/median_192 does not exist
+Downloading mtbs_old/median_192
+File mtbs_old/median_193 does not exist
+Downloading mtbs_old/median_193
+File mtbs_old/median_194 does not exist
+Downloading mtbs_old/median_194
+File mtbs_old/median_195 does not exist
+Downloading mtbs_old/median_195
+File mtbs_old/median_196 does not exist
+Downloading mtbs_old/median_196
+File mtbs_old/median_197 does not exist
+Downloading mtbs_old/median_197
+File mtbs_old/median_198 does not exist
+Downloading mtbs_old/median_198
+File mtbs_old/median_199 does not exist
+Downloading mtbs_old/median_199
+File mtbs_old/median_200 does not exist
+Downloading mtbs_old/median_200
+File mtbs_old/median_201 does not exist
+Downloading mtbs_old/median_201
+File mtbs_old/median_177 does not exist
+Downloading mtbs_old/median_177
+File mtbs_old/median_202 does not exist
+Downloading mtbs_old/median_202
+File mtbs_old/median_203 does not exist
+Downloading mtbs_old/median_203
+File mtbs_old/median_204 does not exist
+Downloading mtbs_old/median_204
+File mtbs_old/median_205 does not exist
+Downloading mtbs_old/median_205
+File mtbs_old/median_206 does not exist
+Downloading mtbs_old/median_206
+File mtbs_old/median_207 does not exist
+Downloading mtbs_old/median_207
+File mtbs_old/median_208 does not exist
+Downloading mtbs_old/median_208
+File mtbs_old/median_209 does not exist
+Downloading mtbs_old/median_209
+File mtbs_old/median_221 does not exist
+Downloading mtbs_old/median_221
+File mtbs_old/median_222 does not exist
+Downloading mtbs_old/median_222
+File mtbs_old/median_223 does not exist
+Downloading mtbs_old/median_223
+File mtbs_old/median_229 does not exist
+Downloading mtbs_old/median_229
+File mtbs_old/median_963 does not exist
+Downloading mtbs_old/median_963
+File mtbs_old/median_230 does not exist
+Downloading mtbs_old/median_230
+File mtbs_old/median_231 does not exist
+Downloading mtbs_old/median_231
+File mtbs_old/median_238 does not exist
+Downloading mtbs_old/median_238
+File mtbs_old/median_232 does not exist
+Downloading mtbs_old/median_232
+File mtbs_old/median_240 does not exist
+Downloading mtbs_old/median_240
+File mtbs_old/median_241 does not exist
+Downloading mtbs_old/median_241
+File mtbs_old/median_267 does not exist
+Downloading mtbs_old/median_267
+File mtbs_old/median_943 does not exist
+Downloading mtbs_old/median_943
+File mtbs_old/median_242 does not exist
+Downloading mtbs_old/median_242
+File mtbs_old/median_243 does not exist
+Downloading mtbs_old/median_243
+File mtbs_old/median_244 does not exist
+Downloading mtbs_old/median_244
+File mtbs_old/median_245 does not exist
+Downloading mtbs_old/median_245
+File mtbs_old/median_246 does not exist
+Downloading mtbs_old/median_246
+File mtbs_old/median_247 does not exist
+Downloading mtbs_old/median_247
+File mtbs_old/median_248 does not exist
+Downloading mtbs_old/median_248
+File mtbs_old/median_249 does not exist
+Downloading mtbs_old/median_249
+File mtbs_old/median_250 does not exist
+Downloading mtbs_old/median_250
+File mtbs_old/median_251 does not exist
+Downloading mtbs_old/median_251
+File mtbs_old/median_252 does not exist
+Downloading mtbs_old/median_252
+File mtbs_old/median_253 does not exist
+Downloading mtbs_old/median_253
+File mtbs_old/median_254 does not exist
+Downloading mtbs_old/median_254
+File mtbs_old/median_255 does not exist
+Downloading mtbs_old/median_255
+File mtbs_old/median_256 does not exist
+Downloading mtbs_old/median_256
+File mtbs_old/median_257 does not exist
+Downloading mtbs_old/median_257
+File mtbs_old/median_258 does not exist
+Downloading mtbs_old/median_258
+File mtbs_old/median_272 does not exist
+Downloading mtbs_old/median_272
+File mtbs_old/median_277 does not exist
+Downloading mtbs_old/median_277
+File mtbs_old/median_1176 does not exist
+Downloading mtbs_old/median_1176
+File mtbs_old/median_942 does not exist
+Downloading mtbs_old/median_942
+File mtbs_old/median_952 does not exist
+Downloading mtbs_old/median_952
+File mtbs_old/median_966 does not exist
+Downloading mtbs_old/median_966
+File mtbs_old/median_1177 does not exist
+Downloading mtbs_old/median_1177
+File mtbs_old/median_965 does not exist
+Downloading mtbs_old/median_965
+File mtbs_old/median_968 does not exist
+Downloading mtbs_old/median_968
+File mtbs_old/median_967 does not exist
+Downloading mtbs_old/median_967
+File mtbs_old/median_971 does not exist
+Downloading mtbs_old/median_971
+File mtbs_old/median_945 does not exist
+Downloading mtbs_old/median_945
+File mtbs_old/median_279 does not exist
+Downloading mtbs_old/median_279
+File mtbs_old/median_280 does not exist
+Downloading mtbs_old/median_280
+File mtbs_old/median_283 does not exist
+Downloading mtbs_old/median_283
+File mtbs_old/median_287 does not exist
+Downloading mtbs_old/median_287
+File mtbs_old/median_284 does not exist
+Downloading mtbs_old/median_284
+File mtbs_old/median_288 does not exist
+Downloading mtbs_old/median_288
+File mtbs_old/median_289 does not exist
+Downloading mtbs_old/median_289
+File mtbs_old/median_290 does not exist
+Downloading mtbs_old/median_290
+File mtbs_old/median_291 does not exist
+Downloading mtbs_old/median_291
+File mtbs_old/median_292 does not exist
+Downloading mtbs_old/median_292
+File mtbs_old/median_320 does not exist
+Downloading mtbs_old/median_320
+File mtbs_old/median_321 does not exist
+Downloading mtbs_old/median_321
+File mtbs_old/median_293 does not exist
+Downloading mtbs_old/median_293
+File mtbs_old/median_294 does not exist
+Downloading mtbs_old/median_294
+File mtbs_old/median_295 does not exist
+Downloading mtbs_old/median_295
+File mtbs_old/median_322 does not exist
+Downloading mtbs_old/median_322
+File mtbs_old/median_296 does not exist
+Downloading mtbs_old/median_296
+File mtbs_old/median_297 does not exist
+Downloading mtbs_old/median_297
+File mtbs_old/median_298 does not exist
+Downloading mtbs_old/median_298
+File mtbs_old/median_299 does not exist
+Downloading mtbs_old/median_299
+File mtbs_old/median_313 does not exist
+Downloading mtbs_old/median_313
+File mtbs_old/median_314 does not exist
+Downloading mtbs_old/median_314
+File mtbs_old/median_319 does not exist
+Downloading mtbs_old/median_319
+File mtbs_old/median_300 does not exist
+Downloading mtbs_old/median_300
+File mtbs_old/median_301 does not exist
+Downloading mtbs_old/median_301
+File mtbs_old/median_302 does not exist
+Downloading mtbs_old/median_302
+File mtbs_old/median_327 does not exist
+Downloading mtbs_old/median_327
+File mtbs_old/median_342 does not exist
+Downloading mtbs_old/median_342
+File mtbs_old/median_328 does not exist
+Downloading mtbs_old/median_328
+File mtbs_old/median_323 does not exist
+Downloading mtbs_old/median_323
+File mtbs_old/median_329 does not exist
+Downloading mtbs_old/median_329
+File mtbs_old/median_330 does not exist
+Downloading mtbs_old/median_330
+File mtbs_old/median_331 does not exist
+Downloading mtbs_old/median_331
+File mtbs_old/median_332 does not exist
+Downloading mtbs_old/median_332
+File mtbs_old/median_340 does not exist
+Downloading mtbs_old/median_340
+File mtbs_old/median_343 does not exist
+Downloading mtbs_old/median_343
+File mtbs_old/median_325 does not exist
+Downloading mtbs_old/median_325
+File mtbs_old/median_333 does not exist
+Downloading mtbs_old/median_333
+File mtbs_old/median_334 does not exist
+Downloading mtbs_old/median_334
+File mtbs_old/median_344 does not exist
+Downloading mtbs_old/median_344
+File mtbs_old/median_326 does not exist
+Downloading mtbs_old/median_326
+File mtbs_old/median_335 does not exist
+Downloading mtbs_old/median_335
+File mtbs_old/median_338 does not exist
+Downloading mtbs_old/median_338
+File mtbs_old/median_339 does not exist
+Downloading mtbs_old/median_339
+File mtbs_old/median_345 does not exist
+Downloading mtbs_old/median_345
+File mtbs_old/median_336 does not exist
+Downloading mtbs_old/median_336
+File mtbs_old/median_341 does not exist
+Downloading mtbs_old/median_341
+File mtbs_old/median_346 does not exist
+Downloading mtbs_old/median_346
+File mtbs_old/median_347 does not exist
+Downloading mtbs_old/median_347
+File mtbs_old/median_348 does not exist
+Downloading mtbs_old/median_348
+File mtbs_old/median_349 does not exist
+Downloading mtbs_old/median_349
+File mtbs_old/median_350 does not exist
+Downloading mtbs_old/median_350
+File mtbs_old/median_363 does not exist
+Downloading mtbs_old/median_363
+File mtbs_old/median_364 does not exist
+Downloading mtbs_old/median_364
+File mtbs_old/median_398 does not exist
+Downloading mtbs_old/median_398
+File mtbs_old/median_351 does not exist
+Downloading mtbs_old/median_351
+File mtbs_old/median_365 does not exist
+Downloading mtbs_old/median_365
+File mtbs_old/median_395 does not exist
+Downloading mtbs_old/median_395
+File mtbs_old/median_397 does not exist
+Downloading mtbs_old/median_397
+File mtbs_old/median_366 does not exist
+Downloading mtbs_old/median_366
+File mtbs_old/median_367 does not exist
+Downloading mtbs_old/median_367
+File mtbs_old/median_354 does not exist
+Downloading mtbs_old/median_354
+File mtbs_old/median_399 does not exist
+Downloading mtbs_old/median_399
+File mtbs_old/median_404 does not exist
+Downloading mtbs_old/median_404
+File mtbs_old/median_405 does not exist
+Downloading mtbs_old/median_405
+File mtbs_old/median_406 does not exist
+Downloading mtbs_old/median_406
+File mtbs_old/median_407 does not exist
+Downloading mtbs_old/median_407
+File mtbs_old/median_408 does not exist
+Downloading mtbs_old/median_408
+File mtbs_old/median_410 does not exist
+Downloading mtbs_old/median_410
+File mtbs_old/median_425 does not exist
+Downloading mtbs_old/median_425
+File mtbs_old/median_426 does not exist
+Downloading mtbs_old/median_426
+File mtbs_old/median_427 does not exist
+Downloading mtbs_old/median_427
+File mtbs_old/median_428 does not exist
+Downloading mtbs_old/median_428
+File mtbs_old/median_941 does not exist
+Downloading mtbs_old/median_941
+File mtbs_old/median_429 does not exist
+Downloading mtbs_old/median_429
+File mtbs_old/median_469 does not exist
+Downloading mtbs_old/median_469
+File mtbs_old/median_481 does not exist
+Downloading mtbs_old/median_481
+File mtbs_old/median_423 does not exist
+Downloading mtbs_old/median_423
+File mtbs_old/median_430 does not exist
+Downloading mtbs_old/median_430
+File mtbs_old/median_431 does not exist
+Downloading mtbs_old/median_431
+File mtbs_old/median_432 does not exist
+Downloading mtbs_old/median_432
+File mtbs_old/median_470 does not exist
+Downloading mtbs_old/median_470
+File mtbs_old/median_471 does not exist
+Downloading mtbs_old/median_471
+File mtbs_old/median_421 does not exist
+Downloading mtbs_old/median_421
+File mtbs_old/median_422 does not exist
+Downloading mtbs_old/median_422
+File mtbs_old/median_434 does not exist
+Downloading mtbs_old/median_434
+File mtbs_old/median_424 does not exist
+Downloading mtbs_old/median_424
+File mtbs_old/median_437 does not exist
+Downloading mtbs_old/median_437
+File mtbs_old/median_435 does not exist
+Downloading mtbs_old/median_435
+File mtbs_old/median_436 does not exist
+Downloading mtbs_old/median_436
+File mtbs_old/median_412 does not exist
+Downloading mtbs_old/median_412
+File mtbs_old/median_419 does not exist
+Downloading mtbs_old/median_419
+File mtbs_old/median_433 does not exist
+Downloading mtbs_old/median_433
+File mtbs_old/median_472 does not exist
+Downloading mtbs_old/median_472
+File mtbs_old/median_482 does not exist
+Downloading mtbs_old/median_482
+File mtbs_old/median_463 does not exist
+Downloading mtbs_old/median_463
+File mtbs_old/median_452 does not exist
+Downloading mtbs_old/median_452
+File mtbs_old/median_473 does not exist
+Downloading mtbs_old/median_473
+File mtbs_old/median_439 does not exist
+Downloading mtbs_old/median_439
+File mtbs_old/median_515 does not exist
+Downloading mtbs_old/median_515
+File mtbs_old/median_516 does not exist
+Downloading mtbs_old/median_516
+File mtbs_old/median_517 does not exist
+Downloading mtbs_old/median_517
+File mtbs_old/median_518 does not exist
+Downloading mtbs_old/median_518
+File mtbs_old/median_519 does not exist
+Downloading mtbs_old/median_519
+File mtbs_old/median_520 does not exist
+Downloading mtbs_old/median_520
+File mtbs_old/median_580 does not exist
+Downloading mtbs_old/median_580
+File mtbs_old/median_521 does not exist
+Downloading mtbs_old/median_521
+File mtbs_old/median_522 does not exist
+Downloading mtbs_old/median_522
+File mtbs_old/median_567 does not exist
+Downloading mtbs_old/median_567
+File mtbs_old/median_568 does not exist
+Downloading mtbs_old/median_568
+File mtbs_old/median_569 does not exist
+Downloading mtbs_old/median_569
+File mtbs_old/median_572 does not exist
+Downloading mtbs_old/median_572
+File mtbs_old/median_511 does not exist
+Downloading mtbs_old/median_511
+File mtbs_old/median_529 does not exist
+Downloading mtbs_old/median_529
+File mtbs_old/median_530 does not exist
+Downloading mtbs_old/median_530
+File mtbs_old/median_531 does not exist
+Downloading mtbs_old/median_531
+File mtbs_old/median_562 does not exist
+Downloading mtbs_old/median_562
+File mtbs_old/median_573 does not exist
+Downloading mtbs_old/median_573
+File mtbs_old/median_532 does not exist
+Downloading mtbs_old/median_532
+File mtbs_old/median_533 does not exist
+Downloading mtbs_old/median_533
+File mtbs_old/median_534 does not exist
+Downloading mtbs_old/median_534
+File mtbs_old/median_535 does not exist
+Downloading mtbs_old/median_535
+File mtbs_old/median_536 does not exist
+Downloading mtbs_old/median_536
+File mtbs_old/median_537 does not exist
+Downloading mtbs_old/median_537
+File mtbs_old/median_538 does not exist
+Downloading mtbs_old/median_538
+File mtbs_old/median_539 does not exist
+Downloading mtbs_old/median_539
+File mtbs_old/median_540 does not exist
+Downloading mtbs_old/median_540
+File mtbs_old/median_541 does not exist
+Downloading mtbs_old/median_541
+File mtbs_old/median_542 does not exist
+Downloading mtbs_old/median_542
+File mtbs_old/median_543 does not exist
+Downloading mtbs_old/median_543
+File mtbs_old/median_560 does not exist
+Downloading mtbs_old/median_560
+File mtbs_old/median_570 does not exist
+Downloading mtbs_old/median_570
+File mtbs_old/median_574 does not exist
+Downloading mtbs_old/median_574
+File mtbs_old/median_523 does not exist
+Downloading mtbs_old/median_523
+File mtbs_old/median_524 does not exist
+Downloading mtbs_old/median_524
+File mtbs_old/median_525 does not exist
+Downloading mtbs_old/median_525
+File mtbs_old/median_526 does not exist
+Downloading mtbs_old/median_526
+File mtbs_old/median_527 does not exist
+Downloading mtbs_old/median_527
+File mtbs_old/median_528 does not exist
+Downloading mtbs_old/median_528
+File mtbs_old/median_544 does not exist
+Downloading mtbs_old/median_544
+File mtbs_old/median_545 does not exist
+Downloading mtbs_old/median_545
+File mtbs_old/median_548 does not exist
+Downloading mtbs_old/median_548
+File mtbs_old/median_549 does not exist
+Downloading mtbs_old/median_549
+File mtbs_old/median_483 does not exist
+Downloading mtbs_old/median_483
+File mtbs_old/median_550 does not exist
+Downloading mtbs_old/median_550
+File mtbs_old/median_546 does not exist
+Downloading mtbs_old/median_546
+File mtbs_old/median_575 does not exist
+Downloading mtbs_old/median_575
+File mtbs_old/median_547 does not exist
+Downloading mtbs_old/median_547
+File mtbs_old/median_551 does not exist
+Downloading mtbs_old/median_551
+File mtbs_old/median_581 does not exist
+Downloading mtbs_old/median_581
+File mtbs_old/median_584 does not exist
+Downloading mtbs_old/median_584
+File mtbs_old/median_585 does not exist
+Downloading mtbs_old/median_585
+File mtbs_old/median_590 does not exist
+Downloading mtbs_old/median_590
+File mtbs_old/median_593 does not exist
+Downloading mtbs_old/median_593
+File mtbs_old/median_607 does not exist
+Downloading mtbs_old/median_607
+File mtbs_old/median_612 does not exist
+Downloading mtbs_old/median_612
+File mtbs_old/median_613 does not exist
+Downloading mtbs_old/median_613
+File mtbs_old/median_602 does not exist
+Downloading mtbs_old/median_602
+File mtbs_old/median_611 does not exist
+Downloading mtbs_old/median_611
+File mtbs_old/median_595 does not exist
+Downloading mtbs_old/median_595
+File mtbs_old/median_619 does not exist
+Downloading mtbs_old/median_619
+File mtbs_old/median_621 does not exist
+Downloading mtbs_old/median_621
+File mtbs_old/median_631 does not exist
+Downloading mtbs_old/median_631
+File mtbs_old/median_630 does not exist
+Downloading mtbs_old/median_630
+File mtbs_old/median_627 does not exist
+Downloading mtbs_old/median_627
+File mtbs_old/median_634 does not exist
+Downloading mtbs_old/median_634
+File mtbs_old/median_646 does not exist
+Downloading mtbs_old/median_646
+File mtbs_old/median_647 does not exist
+Downloading mtbs_old/median_647
+File mtbs_old/median_632 does not exist
+Downloading mtbs_old/median_632
+File mtbs_old/median_622 does not exist
+Downloading mtbs_old/median_622
+File mtbs_old/median_637 does not exist
+Downloading mtbs_old/median_637
+File mtbs_old/median_660 does not exist
+Downloading mtbs_old/median_660
+File mtbs_old/median_661 does not exist
+Downloading mtbs_old/median_661
+File mtbs_old/median_662 does not exist
+Downloading mtbs_old/median_662
+File mtbs_old/median_648 does not exist
+Downloading mtbs_old/median_648
+File mtbs_old/median_663 does not exist
+Downloading mtbs_old/median_663
+File mtbs_old/median_664 does not exist
+Downloading mtbs_old/median_664
+File mtbs_old/median_668 does not exist
+Downloading mtbs_old/median_668
+File mtbs_old/median_669 does not exist
+Downloading mtbs_old/median_669
+File mtbs_old/median_673 does not exist
+Downloading mtbs_old/median_673
+File mtbs_old/median_649 does not exist
+Downloading mtbs_old/median_649
+File mtbs_old/median_670 does not exist
+Downloading mtbs_old/median_670
+File mtbs_old/median_689 does not exist
+Downloading mtbs_old/median_689
+File mtbs_old/median_671 does not exist
+Downloading mtbs_old/median_671
+File mtbs_old/median_690 does not exist
+Downloading mtbs_old/median_690
+File mtbs_old/median_691 does not exist
+Downloading mtbs_old/median_691
+File mtbs_old/median_672 does not exist
+Downloading mtbs_old/median_672
+File mtbs_old/median_43 does not exist
+Downloading mtbs_old/median_43
+File mtbs_old/median_5 does not exist
+Downloading mtbs_old/median_5
+File mtbs_old/median_9 does not exist
+Downloading mtbs_old/median_9
+File mtbs_old/median_22 does not exist
+Downloading mtbs_old/median_22
+File mtbs_old/median_1 does not exist
+Downloading mtbs_old/median_1
+File mtbs_old/median_12 does not exist
+Downloading mtbs_old/median_12
+File mtbs_old/median_14 does not exist
+Downloading mtbs_old/median_14
+File mtbs_old/median_21 does not exist
+Downloading mtbs_old/median_21
+File mtbs_old/median_2 does not exist
+Downloading mtbs_old/median_2
+File mtbs_old/median_10 does not exist
+Downloading mtbs_old/median_10
+File mtbs_old/median_13 does not exist
+Downloading mtbs_old/median_13
+File mtbs_old/median_18 does not exist
+Downloading mtbs_old/median_18
+File mtbs_old/median_19 does not exist
+Downloading mtbs_old/median_19
+File mtbs_old/median_20 does not exist
+Downloading mtbs_old/median_20
+File mtbs_old/median_8 does not exist
+Downloading mtbs_old/median_8
+File mtbs_old/median_23 does not exist
+Downloading mtbs_old/median_23
+File mtbs_old/median_17 does not exist
+Downloading mtbs_old/median_17
+File mtbs_old/median_15 does not exist
+Downloading mtbs_old/median_15
+File mtbs_old/median_16 does not exist
+Downloading mtbs_old/median_16
+File mtbs_old/median_7 does not exist
+Downloading mtbs_old/median_7
+File mtbs_old/median_11 does not exist
+Downloading mtbs_old/median_11
+File mtbs_old/median_693 does not exist
+Downloading mtbs_old/median_693
+File mtbs_old/median_721 does not exist
+Downloading mtbs_old/median_721
+File mtbs_old/median_733 does not exist
+Downloading mtbs_old/median_733
+File mtbs_old/median_695 does not exist
+Downloading mtbs_old/median_695
+File mtbs_old/median_698 does not exist
+Downloading mtbs_old/median_698
+File mtbs_old/median_699 does not exist
+Downloading mtbs_old/median_699
+File mtbs_old/median_704 does not exist
+Downloading mtbs_old/median_704
+File mtbs_old/median_705 does not exist
+Downloading mtbs_old/median_705
+File mtbs_old/median_707 does not exist
+Downloading mtbs_old/median_707
+File mtbs_old/median_709 does not exist
+Downloading mtbs_old/median_709
+File mtbs_old/median_729 does not exist
+Downloading mtbs_old/median_729
+File mtbs_old/median_736 does not exist
+Downloading mtbs_old/median_736
+File mtbs_old/median_745 does not exist
+Downloading mtbs_old/median_745
+File mtbs_old/median_708 does not exist
+Downloading mtbs_old/median_708
+File mtbs_old/median_714 does not exist
+Downloading mtbs_old/median_714
+File mtbs_old/median_727 does not exist
+Downloading mtbs_old/median_727
+File mtbs_old/median_694 does not exist
+Downloading mtbs_old/median_694
+File mtbs_old/median_715 does not exist
+Downloading mtbs_old/median_715
+File mtbs_old/median_749 does not exist
+Downloading mtbs_old/median_749
+File mtbs_old/median_703 does not exist
+Downloading mtbs_old/median_703
+File mtbs_old/median_724 does not exist
+Downloading mtbs_old/median_724
+File mtbs_old/median_706 does not exist
+Downloading mtbs_old/median_706
+File mtbs_old/median_716 does not exist
+Downloading mtbs_old/median_716
+File mtbs_old/median_730 does not exist
+Downloading mtbs_old/median_730
+File mtbs_old/median_696 does not exist
+Downloading mtbs_old/median_696
+File mtbs_old/median_702 does not exist
+Downloading mtbs_old/median_702
+File mtbs_old/median_717 does not exist
+Downloading mtbs_old/median_717
+File mtbs_old/median_726 does not exist
+Downloading mtbs_old/median_726
+File mtbs_old/median_737 does not exist
+Downloading mtbs_old/median_737
+File mtbs_old/median_718 does not exist
+Downloading mtbs_old/median_718
+File mtbs_old/median_739 does not exist
+Downloading mtbs_old/median_739
+File mtbs_old/median_692 does not exist
+Downloading mtbs_old/median_692
+File mtbs_old/median_701 does not exist
+Downloading mtbs_old/median_701
+File mtbs_old/median_713 does not exist
+Downloading mtbs_old/median_713
+File mtbs_old/median_734 does not exist
+Downloading mtbs_old/median_734
+File mtbs_old/median_742 does not exist
+Downloading mtbs_old/median_742
+File mtbs_old/median_719 does not exist
+Downloading mtbs_old/median_719
+File mtbs_old/median_720 does not exist
+Downloading mtbs_old/median_720
+File mtbs_old/median_740 does not exist
+Downloading mtbs_old/median_740
+File mtbs_old/median_760 does not exist
+Downloading mtbs_old/median_760
+File mtbs_old/median_871 does not exist
+Downloading mtbs_old/median_871
+File mtbs_old/median_874 does not exist
+Downloading mtbs_old/median_874
+File mtbs_old/median_928 does not exist
+Downloading mtbs_old/median_928
+File mtbs_old/median_918 does not exist
+Downloading mtbs_old/median_918
+File mtbs_old/median_804 does not exist
+Downloading mtbs_old/median_804
+File mtbs_old/median_833 does not exist
+Downloading mtbs_old/median_833
+File mtbs_old/median_819 does not exist
+Downloading mtbs_old/median_819
+File mtbs_old/median_831 does not exist
+Downloading mtbs_old/median_831
+File mtbs_old/median_764 does not exist
+Downloading mtbs_old/median_764
+File mtbs_old/median_920 does not exist
+Downloading mtbs_old/median_920
+File mtbs_old/median_807 does not exist
+Downloading mtbs_old/median_807
+File mtbs_old/median_828 does not exist
+Downloading mtbs_old/median_828
+File mtbs_old/median_844 does not exist
+Downloading mtbs_old/median_844
+File mtbs_old/median_777 does not exist
+Downloading mtbs_old/median_777
+File mtbs_old/median_798 does not exist
+Downloading mtbs_old/median_798
+File mtbs_old/median_799 does not exist
+Downloading mtbs_old/median_799
+File mtbs_old/median_800 does not exist
+Downloading mtbs_old/median_800
+File mtbs_old/median_809 does not exist
+Downloading mtbs_old/median_809
+File mtbs_old/median_812 does not exist
+Downloading mtbs_old/median_812
+File mtbs_old/median_816 does not exist
+Downloading mtbs_old/median_816
+File mtbs_old/median_835 does not exist
+Downloading mtbs_old/median_835
+File mtbs_old/median_845 does not exist
+Downloading mtbs_old/median_845
+File mtbs_old/median_849 does not exist
+Downloading mtbs_old/median_849
+File mtbs_old/median_856 does not exist
+Downloading mtbs_old/median_856
+File mtbs_old/median_857 does not exist
+Downloading mtbs_old/median_857
+File mtbs_old/median_861 does not exist
+Downloading mtbs_old/median_861
+File mtbs_old/median_875 does not exist
+Downloading mtbs_old/median_875
+File mtbs_old/median_886 does not exist
+Downloading mtbs_old/median_886
+File mtbs_old/median_891 does not exist
+Downloading mtbs_old/median_891
+File mtbs_old/median_893 does not exist
+Downloading mtbs_old/median_893
+File mtbs_old/median_894 does not exist
+Downloading mtbs_old/median_894
+File mtbs_old/median_896 does not exist
+Downloading mtbs_old/median_896
+File mtbs_old/median_913 does not exist
+Downloading mtbs_old/median_913
+File mtbs_old/median_924 does not exist
+Downloading mtbs_old/median_924
+File mtbs_old/median_925 does not exist
+Downloading mtbs_old/median_925
+File mtbs_old/median_930 does not exist
+Downloading mtbs_old/median_930
+File mtbs_old/median_762 does not exist
+Downloading mtbs_old/median_762
+File mtbs_old/median_765 does not exist
+Downloading mtbs_old/median_765
+File mtbs_old/median_785 does not exist
+Downloading mtbs_old/median_785
+File mtbs_old/median_796 does not exist
+Downloading mtbs_old/median_796
+File mtbs_old/median_801 does not exist
+Downloading mtbs_old/median_801
+File mtbs_old/median_806 does not exist
+Downloading mtbs_old/median_806
+File mtbs_old/median_810 does not exist
+Downloading mtbs_old/median_810
+File mtbs_old/median_813 does not exist
+Downloading mtbs_old/median_813
+File mtbs_old/median_815 does not exist
+Downloading mtbs_old/median_815
+File mtbs_old/median_818 does not exist
+Downloading mtbs_old/median_818
+File mtbs_old/median_830 does not exist
+Downloading mtbs_old/median_830
+File mtbs_old/median_834 does not exist
+Downloading mtbs_old/median_834
+File mtbs_old/median_839 does not exist
+Downloading mtbs_old/median_839
+File mtbs_old/median_846 does not exist
+Downloading mtbs_old/median_846
+File mtbs_old/median_847 does not exist
+Downloading mtbs_old/median_847
+File mtbs_old/median_848 does not exist
+Downloading mtbs_old/median_848
+File mtbs_old/median_850 does not exist
+Downloading mtbs_old/median_850
+File mtbs_old/median_858 does not exist
+Downloading mtbs_old/median_858
+File mtbs_old/median_859 does not exist
+Downloading mtbs_old/median_859
+File mtbs_old/median_865 does not exist
+Downloading mtbs_old/median_865
+File mtbs_old/median_869 does not exist
+Downloading mtbs_old/median_869
+File mtbs_old/median_878 does not exist
+Downloading mtbs_old/median_878
+File mtbs_old/median_883 does not exist
+Downloading mtbs_old/median_883
+File mtbs_old/median_888 does not exist
+Downloading mtbs_old/median_888
+File mtbs_old/median_889 does not exist
+Downloading mtbs_old/median_889
+File mtbs_old/median_890 does not exist
+Downloading mtbs_old/median_890
+File mtbs_old/median_899 does not exist
+Downloading mtbs_old/median_899
+File mtbs_old/median_907 does not exist
+Downloading mtbs_old/median_907
+File mtbs_old/median_909 does not exist
+Downloading mtbs_old/median_909
+File mtbs_old/median_1076 does not exist
+Downloading mtbs_old/median_1076
+File mtbs_old/median_767 does not exist
+Downloading mtbs_old/median_767
+File mtbs_old/median_781 does not exist
+Downloading mtbs_old/median_781
+File mtbs_old/median_784 does not exist
+Downloading mtbs_old/median_784
+File mtbs_old/median_787 does not exist
+Downloading mtbs_old/median_787
+File mtbs_old/median_788 does not exist
+Downloading mtbs_old/median_788
+File mtbs_old/median_791 does not exist
+Downloading mtbs_old/median_791
+File mtbs_old/median_794 does not exist
+Downloading mtbs_old/median_794
+File mtbs_old/median_795 does not exist
+Downloading mtbs_old/median_795
+File mtbs_old/median_797 does not exist
+Downloading mtbs_old/median_797
+File mtbs_old/median_811 does not exist
+Downloading mtbs_old/median_811
+File mtbs_old/median_817 does not exist
+Downloading mtbs_old/median_817
+File mtbs_old/median_825 does not exist
+Downloading mtbs_old/median_825
+File mtbs_old/median_832 does not exist
+Downloading mtbs_old/median_832
+File mtbs_old/median_838 does not exist
+Downloading mtbs_old/median_838
+File mtbs_old/median_840 does not exist
+Downloading mtbs_old/median_840
+File mtbs_old/median_842 does not exist
+Downloading mtbs_old/median_842
+File mtbs_old/median_863 does not exist
+Downloading mtbs_old/median_863
+File mtbs_old/median_879 does not exist
+Downloading mtbs_old/median_879
+File mtbs_old/median_880 does not exist
+Downloading mtbs_old/median_880
+File mtbs_old/median_884 does not exist
+Downloading mtbs_old/median_884
+File mtbs_old/median_897 does not exist
+Downloading mtbs_old/median_897
+File mtbs_old/median_900 does not exist
+Downloading mtbs_old/median_900
+File mtbs_old/median_911 does not exist
+Downloading mtbs_old/median_911
+File mtbs_old/median_919 does not exist
+Downloading mtbs_old/median_919
+File mtbs_old/median_923 does not exist
+Downloading mtbs_old/median_923
+File mtbs_old/median_926 does not exist
+Downloading mtbs_old/median_926
+File mtbs_old/median_929 does not exist
+Downloading mtbs_old/median_929
+File mtbs_old/median_931 does not exist
+Downloading mtbs_old/median_931
+File mtbs_old/median_766 does not exist
+Downloading mtbs_old/median_766
+File mtbs_old/median_778 does not exist
+Downloading mtbs_old/median_778
+File mtbs_old/median_779 does not exist
+Downloading mtbs_old/median_779
+File mtbs_old/median_786 does not exist
+Downloading mtbs_old/median_786
+File mtbs_old/median_789 does not exist
+Downloading mtbs_old/median_789
+File mtbs_old/median_790 does not exist
+Downloading mtbs_old/median_790
+File mtbs_old/median_802 does not exist
+Downloading mtbs_old/median_802
+File mtbs_old/median_803 does not exist
+Downloading mtbs_old/median_803
+File mtbs_old/median_805 does not exist
+Downloading mtbs_old/median_805
+File mtbs_old/median_808 does not exist
+Downloading mtbs_old/median_808
+File mtbs_old/median_814 does not exist
+Downloading mtbs_old/median_814
+File mtbs_old/median_820 does not exist
+Downloading mtbs_old/median_820
+File mtbs_old/median_823 does not exist
+Downloading mtbs_old/median_823
+File mtbs_old/median_841 does not exist
+Downloading mtbs_old/median_841
+File mtbs_old/median_843 does not exist
+Downloading mtbs_old/median_843
+File mtbs_old/median_851 does not exist
+Downloading mtbs_old/median_851
+File mtbs_old/median_852 does not exist
+Downloading mtbs_old/median_852
+File mtbs_old/median_855 does not exist
+Downloading mtbs_old/median_855
+File mtbs_old/median_860 does not exist
+Downloading mtbs_old/median_860
+File mtbs_old/median_866 does not exist
+Downloading mtbs_old/median_866
+File mtbs_old/median_867 does not exist
+Downloading mtbs_old/median_867
+File mtbs_old/median_873 does not exist
+Downloading mtbs_old/median_873
+File mtbs_old/median_877 does not exist
+Downloading mtbs_old/median_877
+File mtbs_old/median_881 does not exist
+Downloading mtbs_old/median_881
+File mtbs_old/median_895 does not exist
+Downloading mtbs_old/median_895
+File mtbs_old/median_902 does not exist
+Downloading mtbs_old/median_902
+File mtbs_old/median_906 does not exist
+Downloading mtbs_old/median_906
+File mtbs_old/median_921 does not exist
+Downloading mtbs_old/median_921
+File mtbs_old/median_773 does not exist
+Downloading mtbs_old/median_773
+File mtbs_old/median_826 does not exist
+Downloading mtbs_old/median_826
+File mtbs_old/median_827 does not exist
+Downloading mtbs_old/median_827
+File mtbs_old/median_836 does not exist
+Downloading mtbs_old/median_836
+File mtbs_old/median_837 does not exist
+Downloading mtbs_old/median_837
+File mtbs_old/median_868 does not exist
+Downloading mtbs_old/median_868
+File mtbs_old/median_870 does not exist
+Downloading mtbs_old/median_870
+File mtbs_old/median_882 does not exist
+Downloading mtbs_old/median_882
+File mtbs_old/median_892 does not exist
+Downloading mtbs_old/median_892
+File mtbs_old/median_898 does not exist
+Downloading mtbs_old/median_898
+File mtbs_old/median_903 does not exist
+Downloading mtbs_old/median_903
+File mtbs_old/median_904 does not exist
+Downloading mtbs_old/median_904
+File mtbs_old/median_908 does not exist
+Downloading mtbs_old/median_908
+File mtbs_old/median_914 does not exist
+Downloading mtbs_old/median_914
+File mtbs_old/median_792 does not exist
+Downloading mtbs_old/median_792
+File mtbs_old/median_854 does not exist
+Downloading mtbs_old/median_854
+File mtbs_old/median_905 does not exist
+Downloading mtbs_old/median_905
+File mtbs_old/median_912 does not exist
+Downloading mtbs_old/median_912
+File mtbs_old/median_917 does not exist
+Downloading mtbs_old/median_917
+File mtbs_old/median_922 does not exist
+Downloading mtbs_old/median_922
+File mtbs_old/median_927 does not exist
+Downloading mtbs_old/median_927
+File mtbs_old/median_769 does not exist
+Downloading mtbs_old/median_769
+File mtbs_old/median_771 does not exist
+Downloading mtbs_old/median_771
+File mtbs_old/median_772 does not exist
+Downloading mtbs_old/median_772
+File mtbs_old/median_780 does not exist
+Downloading mtbs_old/median_780
+File mtbs_old/median_822 does not exist
+Downloading mtbs_old/median_822
+File mtbs_old/median_824 does not exist
+Downloading mtbs_old/median_824
+File mtbs_old/median_910 does not exist
+Downloading mtbs_old/median_910
+File mtbs_old/median_915 does not exist
+Downloading mtbs_old/median_915
+File mtbs_old/median_774 does not exist
+Downloading mtbs_old/median_774
+File mtbs_old/median_783 does not exist
+Downloading mtbs_old/median_783
+File mtbs_old/median_793 does not exist
+Downloading mtbs_old/median_793
+File mtbs_old/median_768 does not exist
+Downloading mtbs_old/median_768
+File mtbs_old/median_974 does not exist
+Downloading mtbs_old/median_974
+File mtbs_old/median_1011 does not exist
+Downloading mtbs_old/median_1011
+File mtbs_old/median_975 does not exist
+Downloading mtbs_old/median_975
+File mtbs_old/median_1005 does not exist
+Downloading mtbs_old/median_1005
+File mtbs_old/median_1004 does not exist
+Downloading mtbs_old/median_1004
+File mtbs_old/median_991 does not exist
+Downloading mtbs_old/median_991
+File mtbs_old/median_993 does not exist
+Downloading mtbs_old/median_993
+File mtbs_old/median_998 does not exist
+Downloading mtbs_old/median_998
+File mtbs_old/median_1000 does not exist
+Downloading mtbs_old/median_1000
+File mtbs_old/median_1003 does not exist
+Downloading mtbs_old/median_1003
+File mtbs_old/median_996 does not exist
+Downloading mtbs_old/median_996
+File mtbs_old/median_1010 does not exist
+Downloading mtbs_old/median_1010
+File mtbs_old/median_1014 does not exist
+Downloading mtbs_old/median_1014
+File mtbs_old/median_1019 does not exist
+Downloading mtbs_old/median_1019
+File mtbs_old/median_1027 does not exist
+Downloading mtbs_old/median_1027
+File mtbs_old/median_1033 does not exist
+Downloading mtbs_old/median_1033
+File mtbs_old/median_1034 does not exist
+Downloading mtbs_old/median_1034
+File mtbs_old/median_1036 does not exist
+Downloading mtbs_old/median_1036
+File mtbs_old/median_1045 does not exist
+Downloading mtbs_old/median_1045
+File mtbs_old/median_1022 does not exist
+Downloading mtbs_old/median_1022
+File mtbs_old/median_1020 does not exist
+Downloading mtbs_old/median_1020
+File mtbs_old/median_1023 does not exist
+Downloading mtbs_old/median_1023
+File mtbs_old/median_1024 does not exist
+Downloading mtbs_old/median_1024
+File mtbs_old/median_1025 does not exist
+Downloading mtbs_old/median_1025
+File mtbs_old/median_1031 does not exist
+Downloading mtbs_old/median_1031
+File mtbs_old/median_1038 does not exist
+Downloading mtbs_old/median_1038
+File mtbs_old/median_1043 does not exist
+Downloading mtbs_old/median_1043
+File mtbs_old/median_1021 does not exist
+Downloading mtbs_old/median_1021
+File mtbs_old/median_1026 does not exist
+Downloading mtbs_old/median_1026
+File mtbs_old/median_1050 does not exist
+Downloading mtbs_old/median_1050
+File mtbs_old/median_1044 does not exist
+Downloading mtbs_old/median_1044
+File mtbs_old/median_1042 does not exist
+Downloading mtbs_old/median_1042
+File mtbs_old/median_1049 does not exist
+Downloading mtbs_old/median_1049
+File mtbs_old/median_1039 does not exist
+Downloading mtbs_old/median_1039
+File mtbs_old/median_1017 does not exist
+Downloading mtbs_old/median_1017
+File mtbs_old/median_1018 does not exist
+Downloading mtbs_old/median_1018
+File mtbs_old/median_1030 does not exist
+Downloading mtbs_old/median_1030
+File mtbs_old/median_1047 does not exist
+Downloading mtbs_old/median_1047
+File mtbs_old/median_1056 does not exist
+Downloading mtbs_old/median_1056
+File mtbs_old/median_1057 does not exist
+Downloading mtbs_old/median_1057
+File mtbs_old/median_1066 does not exist
+Downloading mtbs_old/median_1066
+File mtbs_old/median_1070 does not exist
+Downloading mtbs_old/median_1070
+File mtbs_old/median_1061 does not exist
+Downloading mtbs_old/median_1061
+File mtbs_old/median_1067 does not exist
+Downloading mtbs_old/median_1067
+File mtbs_old/median_1071 does not exist
+Downloading mtbs_old/median_1071
+File mtbs_old/median_1074 does not exist
+Downloading mtbs_old/median_1074
+File mtbs_old/median_1055 does not exist
+Downloading mtbs_old/median_1055
+File mtbs_old/median_1063 does not exist
+Downloading mtbs_old/median_1063
+File mtbs_old/median_1064 does not exist
+Downloading mtbs_old/median_1064
+File mtbs_old/median_1065 does not exist
+Downloading mtbs_old/median_1065
+File mtbs_old/median_1069 does not exist
+Downloading mtbs_old/median_1069
+File mtbs_old/median_1058 does not exist
+Downloading mtbs_old/median_1058
+File mtbs_old/median_1059 does not exist
+Downloading mtbs_old/median_1059
+File mtbs_old/median_1068 does not exist
+Downloading mtbs_old/median_1068
+File mtbs_old/median_1062 does not exist
+Downloading mtbs_old/median_1062
+File mtbs_old/median_1060 does not exist
+Downloading mtbs_old/median_1060
+File mtbs_old/median_1089 does not exist
+Downloading mtbs_old/median_1089
+File mtbs_old/median_1150 does not exist
+Downloading mtbs_old/median_1150
+File mtbs_old/median_1167 does not exist
+Downloading mtbs_old/median_1167
+File mtbs_old/median_1124 does not exist
+Downloading mtbs_old/median_1124
+File mtbs_old/median_1094 does not exist
+Downloading mtbs_old/median_1094
+File mtbs_old/median_1160 does not exist
+Downloading mtbs_old/median_1160
+File mtbs_old/median_1151 does not exist
+Downloading mtbs_old/median_1151
+File mtbs_old/median_1090 does not exist
+Downloading mtbs_old/median_1090
+File mtbs_old/median_1148 does not exist
+Downloading mtbs_old/median_1148
+File mtbs_old/median_1098 does not exist
+Downloading mtbs_old/median_1098
+File mtbs_old/median_1156 does not exist
+Downloading mtbs_old/median_1156
+File mtbs_old/median_1157 does not exist
+Downloading mtbs_old/median_1157
+File mtbs_old/median_1100 does not exist
+Downloading mtbs_old/median_1100
+File mtbs_old/median_1146 does not exist
+Downloading mtbs_old/median_1146
+File mtbs_old/median_1155 does not exist
+Downloading mtbs_old/median_1155
+File mtbs_old/median_1158 does not exist
+Downloading mtbs_old/median_1158
+File mtbs_old/median_1109 does not exist
+Downloading mtbs_old/median_1109
+File mtbs_old/median_1120 does not exist
+Downloading mtbs_old/median_1120
+File mtbs_old/median_1128 does not exist
+Downloading mtbs_old/median_1128
+File mtbs_old/median_1142 does not exist
+Downloading mtbs_old/median_1142
+File mtbs_old/median_1143 does not exist
+Downloading mtbs_old/median_1143
+File mtbs_old/median_1118 does not exist
+Downloading mtbs_old/median_1118
+File mtbs_old/median_1121 does not exist
+Downloading mtbs_old/median_1121
+File mtbs_old/median_1122 does not exist
+Downloading mtbs_old/median_1122
+File mtbs_old/median_1126 does not exist
+Downloading mtbs_old/median_1126
+File mtbs_old/median_1168 does not exist
+Downloading mtbs_old/median_1168
+File mtbs_old/median_1169 does not exist
+Downloading mtbs_old/median_1169
+File mtbs_old/median_1171 does not exist
+Downloading mtbs_old/median_1171
+File mtbs_old/median_1173 does not exist
+Downloading mtbs_old/median_1173
+File mtbs_old/median_1081 does not exist
+Downloading mtbs_old/median_1081
+File mtbs_old/median_1136 does not exist
+Downloading mtbs_old/median_1136
+File mtbs_old/median_1159 does not exist
+Downloading mtbs_old/median_1159
+File mtbs_old/median_1102 does not exist
+Downloading mtbs_old/median_1102
+File mtbs_old/median_1119 does not exist
+Downloading mtbs_old/median_1119
+File mtbs_old/median_1133 does not exist
+Downloading mtbs_old/median_1133
+File mtbs_old/median_1117 does not exist
+Downloading mtbs_old/median_1117
+File mtbs_old/median_50 does not exist
+Downloading mtbs_old/median_50
+File mtbs_old/median_51 does not exist
+Downloading mtbs_old/median_51
+File mtbs_old/median_52 does not exist
+Downloading mtbs_old/median_52
+File mtbs_old/median_47 does not exist
+Downloading mtbs_old/median_47
+File mtbs_old/median_53 does not exist
+Downloading mtbs_old/median_53
+File mtbs_old/median_54 does not exist
+Downloading mtbs_old/median_54
+File mtbs_old/median_55 does not exist
+Downloading mtbs_old/median_55
+File mtbs_old/median_64 does not exist
+Downloading mtbs_old/median_64
+File mtbs_old/median_56 does not exist
+Downloading mtbs_old/median_56
+File mtbs_old/median_57 does not exist
+Downloading mtbs_old/median_57
+File mtbs_old/median_58 does not exist
+Downloading mtbs_old/median_58
+File mtbs_old/median_73 does not exist
+Downloading mtbs_old/median_73
+File mtbs_old/median_81 does not exist
+Downloading mtbs_old/median_81
+File mtbs_old/median_82 does not exist
+Downloading mtbs_old/median_82
+File mtbs_old/median_92 does not exist
+Downloading mtbs_old/median_92
+File mtbs_old/median_67 does not exist
+Downloading mtbs_old/median_67
+File mtbs_old/median_74 does not exist
+Downloading mtbs_old/median_74
+File mtbs_old/median_83 does not exist
+Downloading mtbs_old/median_83
+File mtbs_old/median_84 does not exist
+Downloading mtbs_old/median_84
+File mtbs_old/median_85 does not exist
+Downloading mtbs_old/median_85
+File mtbs_old/median_93 does not exist
+Downloading mtbs_old/median_93
+File mtbs_old/median_94 does not exist
+Downloading mtbs_old/median_94
+File mtbs_old/median_957 does not exist
+Downloading mtbs_old/median_957
+File mtbs_old/median_958 does not exist
+Downloading mtbs_old/median_958
+File mtbs_old/median_95 does not exist
+Downloading mtbs_old/median_95
+File mtbs_old/median_96 does not exist
+Downloading mtbs_old/median_96
+File mtbs_old/median_97 does not exist
+Downloading mtbs_old/median_97
+File mtbs_old/median_86 does not exist
+Downloading mtbs_old/median_86
+File mtbs_old/median_87 does not exist
+Downloading mtbs_old/median_87
+File mtbs_old/median_88 does not exist
+Downloading mtbs_old/median_88
+File mtbs_old/median_89 does not exist
+Downloading mtbs_old/median_89
+File mtbs_old/median_90 does not exist
+Downloading mtbs_old/median_90
+File mtbs_old/median_91 does not exist
+Downloading mtbs_old/median_91
+File mtbs_old/median_98 does not exist
+Downloading mtbs_old/median_98
+File mtbs_old/median_753 does not exist
+Downloading mtbs_old/median_753
+File mtbs_old/median_110 does not exist
+Downloading mtbs_old/median_110
+File mtbs_old/median_106 does not exist
+Downloading mtbs_old/median_106
+File mtbs_old/median_107 does not exist
+Downloading mtbs_old/median_107
+File mtbs_old/median_108 does not exist
+Downloading mtbs_old/median_108
+File mtbs_old/median_118 does not exist
+Downloading mtbs_old/median_118
+File mtbs_old/median_119 does not exist
+Downloading mtbs_old/median_119
+File mtbs_old/median_120 does not exist
+Downloading mtbs_old/median_120
+File mtbs_old/median_121 does not exist
+Downloading mtbs_old/median_121
+File mtbs_old/median_122 does not exist
+Downloading mtbs_old/median_122
+File mtbs_old/median_123 does not exist
+Downloading mtbs_old/median_123
+File mtbs_old/median_124 does not exist
+Downloading mtbs_old/median_124
+File mtbs_old/median_970 does not exist
+Downloading mtbs_old/median_970
+File mtbs_old/median_125 does not exist
+Downloading mtbs_old/median_125
+File mtbs_old/median_126 does not exist
+Downloading mtbs_old/median_126
+File mtbs_old/median_127 does not exist
+Downloading mtbs_old/median_127
+File mtbs_old/median_752 does not exist
+Downloading mtbs_old/median_752
+File mtbs_old/median_130 does not exist
+Downloading mtbs_old/median_130
+File mtbs_old/median_131 does not exist
+Downloading mtbs_old/median_131
+File mtbs_old/median_129 does not exist
+Downloading mtbs_old/median_129
+File mtbs_old/median_132 does not exist
+Downloading mtbs_old/median_132
+File mtbs_old/median_937 does not exist
+Downloading mtbs_old/median_937
+File mtbs_old/median_145 does not exist
+Downloading mtbs_old/median_145
+File mtbs_old/median_146 does not exist
+Downloading mtbs_old/median_146
+File mtbs_old/median_147 does not exist
+Downloading mtbs_old/median_147
+File mtbs_old/median_148 does not exist
+Downloading mtbs_old/median_148
+File mtbs_old/median_149 does not exist
+Downloading mtbs_old/median_149
+File mtbs_old/median_150 does not exist
+Downloading mtbs_old/median_150
+File mtbs_old/median_151 does not exist
+Downloading mtbs_old/median_151
+File mtbs_old/median_152 does not exist
+Downloading mtbs_old/median_152
+File mtbs_old/median_153 does not exist
+Downloading mtbs_old/median_153
+File mtbs_old/median_154 does not exist
+Downloading mtbs_old/median_154
+File mtbs_old/median_166 does not exist
+Downloading mtbs_old/median_166
+File mtbs_old/median_962 does not exist
+Downloading mtbs_old/median_962
+File mtbs_old/median_139 does not exist
+Downloading mtbs_old/median_139
+File mtbs_old/median_155 does not exist
+Downloading mtbs_old/median_155
+File mtbs_old/median_156 does not exist
+Downloading mtbs_old/median_156
+File mtbs_old/median_157 does not exist
+Downloading mtbs_old/median_157
+File mtbs_old/median_158 does not exist
+Downloading mtbs_old/median_158
+File mtbs_old/median_159 does not exist
+Downloading mtbs_old/median_159
+File mtbs_old/median_160 does not exist
+Downloading mtbs_old/median_160
+File mtbs_old/median_161 does not exist
+Downloading mtbs_old/median_161
+File mtbs_old/median_959 does not exist
+Downloading mtbs_old/median_959
+File mtbs_old/median_138 does not exist
+Downloading mtbs_old/median_138
+File mtbs_old/median_141 does not exist
+Downloading mtbs_old/median_141
+File mtbs_old/median_162 does not exist
+Downloading mtbs_old/median_162
+File mtbs_old/median_163 does not exist
+Downloading mtbs_old/median_163
+File mtbs_old/median_164 does not exist
+Downloading mtbs_old/median_164
+File mtbs_old/median_175 does not exist
+Downloading mtbs_old/median_175
+File mtbs_old/median_933 does not exist
+Downloading mtbs_old/median_933
+File mtbs_old/median_1175 does not exist
+Downloading mtbs_old/median_1175
+File mtbs_old/median_133 does not exist
+Downloading mtbs_old/median_133
+File mtbs_old/median_134 does not exist
+Downloading mtbs_old/median_134
+File mtbs_old/median_140 does not exist
+Downloading mtbs_old/median_140
+File mtbs_old/median_165 does not exist
+Downloading mtbs_old/median_165
+File mtbs_old/median_173 does not exist
+Downloading mtbs_old/median_173
+File mtbs_old/median_956 does not exist
+Downloading mtbs_old/median_956
+File mtbs_old/median_174 does not exist
+Downloading mtbs_old/median_174
+File mtbs_old/median_135 does not exist
+Downloading mtbs_old/median_135
+File mtbs_old/median_172 does not exist
+Downloading mtbs_old/median_172
+File mtbs_old/median_939 does not exist
+Downloading mtbs_old/median_939
+File mtbs_old/median_961 does not exist
+Downloading mtbs_old/median_961
+File mtbs_old/median_755 does not exist
+Downloading mtbs_old/median_755
+File mtbs_old/median_167 does not exist
+Downloading mtbs_old/median_167
+File mtbs_old/median_168 does not exist
+Downloading mtbs_old/median_168
+File mtbs_old/median_169 does not exist
+Downloading mtbs_old/median_169
+File mtbs_old/median_170 does not exist
+Downloading mtbs_old/median_170
+File mtbs_old/median_934 does not exist
+Downloading mtbs_old/median_934
+File mtbs_old/median_210 does not exist
+Downloading mtbs_old/median_210
+File mtbs_old/median_211 does not exist
+Downloading mtbs_old/median_211
+File mtbs_old/median_219 does not exist
+Downloading mtbs_old/median_219
+File mtbs_old/median_212 does not exist
+Downloading mtbs_old/median_212
+File mtbs_old/median_213 does not exist
+Downloading mtbs_old/median_213
+File mtbs_old/median_178 does not exist
+Downloading mtbs_old/median_178
+File mtbs_old/median_214 does not exist
+Downloading mtbs_old/median_214
+File mtbs_old/median_215 does not exist
+Downloading mtbs_old/median_215
+File mtbs_old/median_218 does not exist
+Downloading mtbs_old/median_218
+File mtbs_old/median_940 does not exist
+Downloading mtbs_old/median_940
+File mtbs_old/median_179 does not exist
+Downloading mtbs_old/median_179
+File mtbs_old/median_216 does not exist
+Downloading mtbs_old/median_216
+File mtbs_old/median_224 does not exist
+Downloading mtbs_old/median_224
+File mtbs_old/median_225 does not exist
+Downloading mtbs_old/median_225
+File mtbs_old/median_233 does not exist
+Downloading mtbs_old/median_233
+File mtbs_old/median_234 does not exist
+Downloading mtbs_old/median_234
+File mtbs_old/median_239 does not exist
+Downloading mtbs_old/median_239
+File mtbs_old/median_227 does not exist
+Downloading mtbs_old/median_227
+File mtbs_old/median_235 does not exist
+Downloading mtbs_old/median_235
+File mtbs_old/median_228 does not exist
+Downloading mtbs_old/median_228
+File mtbs_old/median_236 does not exist
+Downloading mtbs_old/median_236
+File mtbs_old/median_237 does not exist
+Downloading mtbs_old/median_237
+File mtbs_old/median_259 does not exist
+Downloading mtbs_old/median_259
+File mtbs_old/median_260 does not exist
+Downloading mtbs_old/median_260
+File mtbs_old/median_261 does not exist
+Downloading mtbs_old/median_261
+File mtbs_old/median_270 does not exist
+Downloading mtbs_old/median_270
+File mtbs_old/median_273 does not exist
+Downloading mtbs_old/median_273
+File mtbs_old/median_276 does not exist
+Downloading mtbs_old/median_276
+File mtbs_old/median_274 does not exist
+Downloading mtbs_old/median_274
+File mtbs_old/median_275 does not exist
+Downloading mtbs_old/median_275
+File mtbs_old/median_972 does not exist
+Downloading mtbs_old/median_972
+File mtbs_old/median_950 does not exist
+Downloading mtbs_old/median_950
+File mtbs_old/median_948 does not exist
+Downloading mtbs_old/median_948
+File mtbs_old/median_754 does not exist
+Downloading mtbs_old/median_754
+File mtbs_old/median_944 does not exist
+Downloading mtbs_old/median_944
+File mtbs_old/median_278 does not exist
+Downloading mtbs_old/median_278
+File mtbs_old/median_932 does not exist
+Downloading mtbs_old/median_932
+File mtbs_old/median_946 does not exist
+Downloading mtbs_old/median_946
+File mtbs_old/median_947 does not exist
+Downloading mtbs_old/median_947
+File mtbs_old/median_281 does not exist
+Downloading mtbs_old/median_281
+File mtbs_old/median_303 does not exist
+Downloading mtbs_old/median_303
+File mtbs_old/median_304 does not exist
+Downloading mtbs_old/median_304
+File mtbs_old/median_305 does not exist
+Downloading mtbs_old/median_305
+File mtbs_old/median_306 does not exist
+Downloading mtbs_old/median_306
+File mtbs_old/median_315 does not exist
+Downloading mtbs_old/median_315
+File mtbs_old/median_307 does not exist
+Downloading mtbs_old/median_307
+File mtbs_old/median_308 does not exist
+Downloading mtbs_old/median_308
+File mtbs_old/median_309 does not exist
+Downloading mtbs_old/median_309
+File mtbs_old/median_310 does not exist
+Downloading mtbs_old/median_310
+File mtbs_old/median_285 does not exist
+Downloading mtbs_old/median_285
+File mtbs_old/median_311 does not exist
+Downloading mtbs_old/median_311
+File mtbs_old/median_316 does not exist
+Downloading mtbs_old/median_316
+File mtbs_old/median_317 does not exist
+Downloading mtbs_old/median_317
+File mtbs_old/median_312 does not exist
+Downloading mtbs_old/median_312
+File mtbs_old/median_318 does not exist
+Downloading mtbs_old/median_318
+File mtbs_old/median_337 does not exist
+Downloading mtbs_old/median_337
+File mtbs_old/median_324 does not exist
+Downloading mtbs_old/median_324
+File mtbs_old/median_355 does not exist
+Downloading mtbs_old/median_355
+File mtbs_old/median_356 does not exist
+Downloading mtbs_old/median_356
+File mtbs_old/median_368 does not exist
+Downloading mtbs_old/median_368
+File mtbs_old/median_369 does not exist
+Downloading mtbs_old/median_369
+File mtbs_old/median_370 does not exist
+Downloading mtbs_old/median_370
+File mtbs_old/median_371 does not exist
+Downloading mtbs_old/median_371
+File mtbs_old/median_372 does not exist
+Downloading mtbs_old/median_372
+File mtbs_old/median_373 does not exist
+Downloading mtbs_old/median_373
+File mtbs_old/median_374 does not exist
+Downloading mtbs_old/median_374
+File mtbs_old/median_394 does not exist
+Downloading mtbs_old/median_394
+File mtbs_old/median_357 does not exist
+Downloading mtbs_old/median_357
+File mtbs_old/median_375 does not exist
+Downloading mtbs_old/median_375
+File mtbs_old/median_376 does not exist
+Downloading mtbs_old/median_376
+File mtbs_old/median_391 does not exist
+Downloading mtbs_old/median_391
+File mtbs_old/median_396 does not exist
+Downloading mtbs_old/median_396
+File mtbs_old/median_377 does not exist
+Downloading mtbs_old/median_377
+File mtbs_old/median_378 does not exist
+Downloading mtbs_old/median_378
+File mtbs_old/median_393 does not exist
+Downloading mtbs_old/median_393
+File mtbs_old/median_379 does not exist
+Downloading mtbs_old/median_379
+File mtbs_old/median_380 does not exist
+Downloading mtbs_old/median_380
+File mtbs_old/median_381 does not exist
+Downloading mtbs_old/median_381
+File mtbs_old/median_382 does not exist
+Downloading mtbs_old/median_382
+File mtbs_old/median_383 does not exist
+Downloading mtbs_old/median_383
+File mtbs_old/median_389 does not exist
+Downloading mtbs_old/median_389
+File mtbs_old/median_384 does not exist
+Downloading mtbs_old/median_384
+File mtbs_old/median_409 does not exist
+Downloading mtbs_old/median_409
+File mtbs_old/median_440 does not exist
+Downloading mtbs_old/median_440
+File mtbs_old/median_441 does not exist
+Downloading mtbs_old/median_441
+File mtbs_old/median_438 does not exist
+Downloading mtbs_old/median_438
+File mtbs_old/median_461 does not exist
+Downloading mtbs_old/median_461
+File mtbs_old/median_462 does not exist
+Downloading mtbs_old/median_462
+File mtbs_old/median_465 does not exist
+Downloading mtbs_old/median_465
+File mtbs_old/median_466 does not exist
+Downloading mtbs_old/median_466
+File mtbs_old/median_474 does not exist
+Downloading mtbs_old/median_474
+File mtbs_old/median_475 does not exist
+Downloading mtbs_old/median_475
+File mtbs_old/median_464 does not exist
+Downloading mtbs_old/median_464
+File mtbs_old/median_446 does not exist
+Downloading mtbs_old/median_446
+File mtbs_old/median_994 does not exist
+Downloading mtbs_old/median_994
+File mtbs_old/median_420 does not exist
+Downloading mtbs_old/median_420
+File mtbs_old/median_414 does not exist
+Downloading mtbs_old/median_414
+File mtbs_old/median_442 does not exist
+Downloading mtbs_old/median_442
+File mtbs_old/median_443 does not exist
+Downloading mtbs_old/median_443
+File mtbs_old/median_444 does not exist
+Downloading mtbs_old/median_444
+File mtbs_old/median_445 does not exist
+Downloading mtbs_old/median_445
+File mtbs_old/median_468 does not exist
+Downloading mtbs_old/median_468
+File mtbs_old/median_415 does not exist
+Downloading mtbs_old/median_415
+File mtbs_old/median_448 does not exist
+Downloading mtbs_old/median_448
+File mtbs_old/median_460 does not exist
+Downloading mtbs_old/median_460
+File mtbs_old/median_447 does not exist
+Downloading mtbs_old/median_447
+File mtbs_old/median_418 does not exist
+Downloading mtbs_old/median_418
+File mtbs_old/median_949 does not exist
+Downloading mtbs_old/median_949
+File mtbs_old/median_449 does not exist
+Downloading mtbs_old/median_449
+File mtbs_old/median_450 does not exist
+Downloading mtbs_old/median_450
+File mtbs_old/median_416 does not exist
+Downloading mtbs_old/median_416
+File mtbs_old/median_451 does not exist
+Downloading mtbs_old/median_451
+File mtbs_old/median_479 does not exist
+Downloading mtbs_old/median_479
+File mtbs_old/median_453 does not exist
+Downloading mtbs_old/median_453
+File mtbs_old/median_454 does not exist
+Downloading mtbs_old/median_454
+File mtbs_old/median_467 does not exist
+Downloading mtbs_old/median_467
+File mtbs_old/median_476 does not exist
+Downloading mtbs_old/median_476
+File mtbs_old/median_552 does not exist
+Downloading mtbs_old/median_552
+File mtbs_old/median_494 does not exist
+Downloading mtbs_old/median_494
+File mtbs_old/median_553 does not exist
+Downloading mtbs_old/median_553
+File mtbs_old/median_556 does not exist
+Downloading mtbs_old/median_556
+File mtbs_old/median_554 does not exist
+Downloading mtbs_old/median_554
+File mtbs_old/median_555 does not exist
+Downloading mtbs_old/median_555
+File mtbs_old/median_484 does not exist
+Downloading mtbs_old/median_484
+File mtbs_old/median_563 does not exist
+Downloading mtbs_old/median_563
+File mtbs_old/median_485 does not exist
+Downloading mtbs_old/median_485
+File mtbs_old/median_492 does not exist
+Downloading mtbs_old/median_492
+File mtbs_old/median_493 does not exist
+Downloading mtbs_old/median_493
+File mtbs_old/median_557 does not exist
+Downloading mtbs_old/median_557
+File mtbs_old/median_558 does not exist
+Downloading mtbs_old/median_558
+File mtbs_old/median_486 does not exist
+Downloading mtbs_old/median_486
+File mtbs_old/median_495 does not exist
+Downloading mtbs_old/median_495
+File mtbs_old/median_559 does not exist
+Downloading mtbs_old/median_559
+File mtbs_old/median_564 does not exist
+Downloading mtbs_old/median_564
+File mtbs_old/median_487 does not exist
+Downloading mtbs_old/median_487
+File mtbs_old/median_488 does not exist
+Downloading mtbs_old/median_488
+File mtbs_old/median_489 does not exist
+Downloading mtbs_old/median_489
+File mtbs_old/median_565 does not exist
+Downloading mtbs_old/median_565
+File mtbs_old/median_490 does not exist
+Downloading mtbs_old/median_490
+File mtbs_old/median_491 does not exist
+Downloading mtbs_old/median_491
+File mtbs_old/median_750 does not exist
+Downloading mtbs_old/median_750
+File mtbs_old/median_498 does not exist
+Downloading mtbs_old/median_498
+File mtbs_old/median_499 does not exist
+Downloading mtbs_old/median_499
+File mtbs_old/median_500 does not exist
+Downloading mtbs_old/median_500
+File mtbs_old/median_501 does not exist
+Downloading mtbs_old/median_501
+File mtbs_old/median_751 does not exist
+Downloading mtbs_old/median_751
+File mtbs_old/median_502 does not exist
+Downloading mtbs_old/median_502
+File mtbs_old/median_586 does not exist
+Downloading mtbs_old/median_586
+File mtbs_old/median_587 does not exist
+Downloading mtbs_old/median_587
+File mtbs_old/median_588 does not exist
+Downloading mtbs_old/median_588
+File mtbs_old/median_591 does not exist
+Downloading mtbs_old/median_591
+File mtbs_old/median_596 does not exist
+Downloading mtbs_old/median_596
+File mtbs_old/median_610 does not exist
+Downloading mtbs_old/median_610
+File mtbs_old/median_599 does not exist
+Downloading mtbs_old/median_599
+File mtbs_old/median_597 does not exist
+Downloading mtbs_old/median_597
+File mtbs_old/median_598 does not exist
+Downloading mtbs_old/median_598
+File mtbs_old/median_603 does not exist
+Downloading mtbs_old/median_603
+File mtbs_old/median_609 does not exist
+Downloading mtbs_old/median_609
+File mtbs_old/median_600 does not exist
+Downloading mtbs_old/median_600
+File mtbs_old/median_605 does not exist
+Downloading mtbs_old/median_605
+File mtbs_old/median_606 does not exist
+Downloading mtbs_old/median_606
+File mtbs_old/median_604 does not exist
+Downloading mtbs_old/median_604
+File mtbs_old/median_1016 does not exist
+Downloading mtbs_old/median_1016
+File mtbs_old/median_601 does not exist
+Downloading mtbs_old/median_601
+File mtbs_old/median_620 does not exist
+Downloading mtbs_old/median_620
+File mtbs_old/median_614 does not exist
+Downloading mtbs_old/median_614
+File mtbs_old/median_618 does not exist
+Downloading mtbs_old/median_618
+File mtbs_old/median_615 does not exist
+Downloading mtbs_old/median_615
+File mtbs_old/median_616 does not exist
+Downloading mtbs_old/median_616
+File mtbs_old/median_617 does not exist
+Downloading mtbs_old/median_617
+File mtbs_old/median_638 does not exist
+Downloading mtbs_old/median_638
+File mtbs_old/median_639 does not exist
+Downloading mtbs_old/median_639
+File mtbs_old/median_633 does not exist
+Downloading mtbs_old/median_633
+File mtbs_old/median_635 does not exist
+Downloading mtbs_old/median_635
+File mtbs_old/median_640 does not exist
+Downloading mtbs_old/median_640
+File mtbs_old/median_674 does not exist
+Downloading mtbs_old/median_674
+File mtbs_old/median_675 does not exist
+Downloading mtbs_old/median_675
+File mtbs_old/median_676 does not exist
+Downloading mtbs_old/median_676
+File mtbs_old/median_677 does not exist
+Downloading mtbs_old/median_677
+File mtbs_old/median_678 does not exist
+Downloading mtbs_old/median_678
+File mtbs_old/median_682 does not exist
+Downloading mtbs_old/median_682
+File mtbs_old/median_683 does not exist
+Downloading mtbs_old/median_683
+File mtbs_old/median_684 does not exist
+Downloading mtbs_old/median_684
+File mtbs_old/median_679 does not exist
+Downloading mtbs_old/median_679
+File mtbs_old/median_680 does not exist
+Downloading mtbs_old/median_680
+File mtbs_old/median_681 does not exist
+Downloading mtbs_old/median_681
+File mtbs_old/median_686 does not exist
+Downloading mtbs_old/median_686
+File mtbs_old/median_687 does not exist
+Downloading mtbs_old/median_687
+File mtbs_old/median_688 does not exist
+Downloading mtbs_old/median_688
+File mtbs_old/median_685 does not exist
+Downloading mtbs_old/median_685
+File mtbs_old/median_32 does not exist
+Downloading mtbs_old/median_32
+File mtbs_old/median_42 does not exist
+Downloading mtbs_old/median_42
+File mtbs_old/median_44 does not exist
+Downloading mtbs_old/median_44
+File mtbs_old/median_45 does not exist
+Downloading mtbs_old/median_45
+File mtbs_old/median_26 does not exist
+Downloading mtbs_old/median_26
+File mtbs_old/median_30 does not exist
+Downloading mtbs_old/median_30
+File mtbs_old/median_4 does not exist
+Downloading mtbs_old/median_4
+File mtbs_old/median_3 does not exist
+Downloading mtbs_old/median_3
+File mtbs_old/median_6 does not exist
+Downloading mtbs_old/median_6
+File mtbs_old/median_731 does not exist
+Downloading mtbs_old/median_731
+File mtbs_old/median_747 does not exist
+Downloading mtbs_old/median_747
+File mtbs_old/median_746 does not exist
+Downloading mtbs_old/median_746
+File mtbs_old/median_711 does not exist
+Downloading mtbs_old/median_711
+File mtbs_old/median_725 does not exist
+Downloading mtbs_old/median_725
+File mtbs_old/median_722 does not exist
+Downloading mtbs_old/median_722
+File mtbs_old/median_723 does not exist
+Downloading mtbs_old/median_723
+File mtbs_old/median_712 does not exist
+Downloading mtbs_old/median_712
+File mtbs_old/median_744 does not exist
+Downloading mtbs_old/median_744
+File mtbs_old/median_743 does not exist
+Downloading mtbs_old/median_743
+File mtbs_old/median_748 does not exist
+Downloading mtbs_old/median_748
+File mtbs_old/median_864 does not exist
+Downloading mtbs_old/median_864
+File mtbs_old/median_782 does not exist
+Downloading mtbs_old/median_782
+File mtbs_old/median_885 does not exist
+Downloading mtbs_old/median_885
+File mtbs_old/median_770 does not exist
+Downloading mtbs_old/median_770
+File mtbs_old/median_775 does not exist
+Downloading mtbs_old/median_775
+File mtbs_old/median_821 does not exist
+Downloading mtbs_old/median_821
+File mtbs_old/median_916 does not exist
+Downloading mtbs_old/median_916
+File mtbs_old/median_887 does not exist
+Downloading mtbs_old/median_887
+File mtbs_old/median_901 does not exist
+Downloading mtbs_old/median_901
+File mtbs_old/median_776 does not exist
+Downloading mtbs_old/median_776
+File mtbs_old/median_876 does not exist
+Downloading mtbs_old/median_876
+File mtbs_old/median_862 does not exist
+Downloading mtbs_old/median_862
+File mtbs_old/median_872 does not exist
+Downloading mtbs_old/median_872
+File mtbs_old/median_853 does not exist
+Downloading mtbs_old/median_853
+File mtbs_old/median_1006 does not exist
+Downloading mtbs_old/median_1006
+File mtbs_old/median_1007 does not exist
+Downloading mtbs_old/median_1007
+File mtbs_old/median_1012 does not exist
+Downloading mtbs_old/median_1012
+File mtbs_old/median_992 does not exist
+Downloading mtbs_old/median_992
+File mtbs_old/median_999 does not exist
+Downloading mtbs_old/median_999
+File mtbs_old/median_1013 does not exist
+Downloading mtbs_old/median_1013
+File mtbs_old/median_976 does not exist
+Downloading mtbs_old/median_976
+File mtbs_old/median_977 does not exist
+Downloading mtbs_old/median_977
+File mtbs_old/median_978 does not exist
+Downloading mtbs_old/median_978
+File mtbs_old/median_979 does not exist
+Downloading mtbs_old/median_979
+File mtbs_old/median_980 does not exist
+Downloading mtbs_old/median_980
+File mtbs_old/median_981 does not exist
+Downloading mtbs_old/median_981
+File mtbs_old/median_983 does not exist
+Downloading mtbs_old/median_983
+File mtbs_old/median_984 does not exist
+Downloading mtbs_old/median_984
+File mtbs_old/median_985 does not exist
+Downloading mtbs_old/median_985
+File mtbs_old/median_987 does not exist
+Downloading mtbs_old/median_987
+File mtbs_old/median_988 does not exist
+Downloading mtbs_old/median_988
+File mtbs_old/median_1015 does not exist
+Downloading mtbs_old/median_1015
+File mtbs_old/median_973 does not exist
+Downloading mtbs_old/median_973
+File mtbs_old/median_982 does not exist
+Downloading mtbs_old/median_982
+File mtbs_old/median_989 does not exist
+Downloading mtbs_old/median_989
+File mtbs_old/median_990 does not exist
+Downloading mtbs_old/median_990
+File mtbs_old/median_995 does not exist
+Downloading mtbs_old/median_995
+File mtbs_old/median_997 does not exist
+Downloading mtbs_old/median_997
+File mtbs_old/median_1001 does not exist
+Downloading mtbs_old/median_1001
+File mtbs_old/median_1002 does not exist
+Downloading mtbs_old/median_1002
+File mtbs_old/median_1009 does not exist
+Downloading mtbs_old/median_1009
+File mtbs_old/median_986 does not exist
+Downloading mtbs_old/median_986
+File mtbs_old/median_1008 does not exist
+Downloading mtbs_old/median_1008
+File mtbs_old/median_1028 does not exist
+Downloading mtbs_old/median_1028
+File mtbs_old/median_1041 does not exist
+Downloading mtbs_old/median_1041
+File mtbs_old/median_1048 does not exist
+Downloading mtbs_old/median_1048
+File mtbs_old/median_1052 does not exist
+Downloading mtbs_old/median_1052
+File mtbs_old/median_1032 does not exist
+Downloading mtbs_old/median_1032
+File mtbs_old/median_1040 does not exist
+Downloading mtbs_old/median_1040
+File mtbs_old/median_1046 does not exist
+Downloading mtbs_old/median_1046
+File mtbs_old/median_1035 does not exist
+Downloading mtbs_old/median_1035
+File mtbs_old/median_1037 does not exist
+Downloading mtbs_old/median_1037
+File mtbs_old/median_1053 does not exist
+Downloading mtbs_old/median_1053
+File mtbs_old/median_1051 does not exist
+Downloading mtbs_old/median_1051
+File mtbs_old/median_1073 does not exist
+Downloading mtbs_old/median_1073
+File mtbs_old/median_1072 does not exist
+Downloading mtbs_old/median_1072
+File mtbs_old/median_1054 does not exist
+Downloading mtbs_old/median_1054
+File mtbs_old/median_1078 does not exist
+Downloading mtbs_old/median_1078
+File mtbs_old/median_1075 does not exist
+Downloading mtbs_old/median_1075
+File mtbs_old/median_1095 does not exist
+Downloading mtbs_old/median_1095
+File mtbs_old/median_1087 does not exist
+Downloading mtbs_old/median_1087
+File mtbs_old/median_1093 does not exist
+Downloading mtbs_old/median_1093
+File mtbs_old/median_1110 does not exist
+Downloading mtbs_old/median_1110
+File mtbs_old/median_1130 does not exist
+Downloading mtbs_old/median_1130
+File mtbs_old/median_1162 does not exist
+Downloading mtbs_old/median_1162
+File mtbs_old/median_1108 does not exist
+Downloading mtbs_old/median_1108
+File mtbs_old/median_1131 does not exist
+Downloading mtbs_old/median_1131
+File mtbs_old/median_1140 does not exist
+Downloading mtbs_old/median_1140
+File mtbs_old/median_1141 does not exist
+Downloading mtbs_old/median_1141
+File mtbs_old/median_1144 does not exist
+Downloading mtbs_old/median_1144
+File mtbs_old/median_1145 does not exist
+Downloading mtbs_old/median_1145
+File mtbs_old/median_1161 does not exist
+Downloading mtbs_old/median_1161
+File mtbs_old/median_1086 does not exist
+Downloading mtbs_old/median_1086
+File mtbs_old/median_1092 does not exist
+Downloading mtbs_old/median_1092
+File mtbs_old/median_1096 does not exist
+Downloading mtbs_old/median_1096
+File mtbs_old/median_1101 does not exist
+Downloading mtbs_old/median_1101
+File mtbs_old/median_1116 does not exist
+Downloading mtbs_old/median_1116
+File mtbs_old/median_1127 does not exist
+Downloading mtbs_old/median_1127
+File mtbs_old/median_1129 does not exist
+Downloading mtbs_old/median_1129
+File mtbs_old/median_1172 does not exist
+Downloading mtbs_old/median_1172
+File mtbs_old/median_1097 does not exist
+Downloading mtbs_old/median_1097
+File mtbs_old/median_1099 does not exist
+Downloading mtbs_old/median_1099
+File mtbs_old/median_1103 does not exist
+Downloading mtbs_old/median_1103
+File mtbs_old/median_1154 does not exist
+Downloading mtbs_old/median_1154
+File mtbs_old/median_1163 does not exist
+Downloading mtbs_old/median_1163
+File mtbs_old/median_1164 does not exist
+Downloading mtbs_old/median_1164
+File mtbs_old/median_1137 does not exist
+Downloading mtbs_old/median_1137
+File mtbs_old/median_1138 does not exist
+Downloading mtbs_old/median_1138
+File mtbs_old/median_1153 does not exist
+Downloading mtbs_old/median_1153
+File mtbs_old/median_1104 does not exist
+Downloading mtbs_old/median_1104
+File mtbs_old/median_1107 does not exist
+Downloading mtbs_old/median_1107
+File mtbs_old/median_1113 does not exist
+Downloading mtbs_old/median_1113
+File mtbs_old/median_1125 does not exist
+Downloading mtbs_old/median_1125
+File mtbs_old/median_1132 does not exist
+Downloading mtbs_old/median_1132
+File mtbs_old/median_1165 does not exist
+Downloading mtbs_old/median_1165
+File mtbs_old/median_1166 does not exist
+Downloading mtbs_old/median_1166
+File mtbs_old/median_1105 does not exist
+Downloading mtbs_old/median_1105
+File mtbs_old/median_1106 does not exist
+Downloading mtbs_old/median_1106
+File mtbs_old/median_1079 does not exist
+Downloading mtbs_old/median_1079
+File mtbs_old/median_1080 does not exist
+Downloading mtbs_old/median_1080
+File mtbs_old/median_1091 does not exist
+Downloading mtbs_old/median_1091
+File mtbs_old/median_1114 does not exist
+Downloading mtbs_old/median_1114
+File mtbs_old/median_1115 does not exist
+Downloading mtbs_old/median_1115
+File mtbs_old/median_1135 does not exist
+Downloading mtbs_old/median_1135
+File mtbs_old/median_1139 does not exist
+Downloading mtbs_old/median_1139
+File mtbs_old/median_1170 does not exist
+Downloading mtbs_old/median_1170
+File mtbs_old/median_1084 does not exist
+Downloading mtbs_old/median_1084
+File mtbs_old/median_1112 does not exist
+Downloading mtbs_old/median_1112
+File mtbs_old/median_1152 does not exist
+Downloading mtbs_old/median_1152
+File mtbs_old/median_1111 does not exist
+Downloading mtbs_old/median_1111
+File mtbs_old/median_46 does not exist
+Downloading mtbs_old/median_46
+File mtbs_old/median_48 does not exist
+Downloading mtbs_old/median_48
+File mtbs_old/median_59 does not exist
+Downloading mtbs_old/median_59
+File mtbs_old/median_49 does not exist
+Downloading mtbs_old/median_49
+File mtbs_old/median_60 does not exist
+Downloading mtbs_old/median_60
+File mtbs_old/median_61 does not exist
+Downloading mtbs_old/median_61
+File mtbs_old/median_62 does not exist
+Downloading mtbs_old/median_62
+File mtbs_old/median_63 does not exist
+Downloading mtbs_old/median_63
+File mtbs_old/median_66 does not exist
+Downloading mtbs_old/median_66
+File mtbs_old/median_65 does not exist
+Downloading mtbs_old/median_65
+File mtbs_old/median_128 does not exist
+Downloading mtbs_old/median_128
+File mtbs_old/median_226 does not exist
+Downloading mtbs_old/median_226
+File mtbs_old/median_262 does not exist
+Downloading mtbs_old/median_262
+File mtbs_old/median_263 does not exist
+Downloading mtbs_old/median_263
+File mtbs_old/median_264 does not exist
+Downloading mtbs_old/median_264
+File mtbs_old/median_265 does not exist
+Downloading mtbs_old/median_265
+File mtbs_old/median_266 does not exist
+Downloading mtbs_old/median_266
+File mtbs_old/median_385 does not exist
+Downloading mtbs_old/median_385
+File mtbs_old/median_386 does not exist
+Downloading mtbs_old/median_386
+File mtbs_old/median_387 does not exist
+Downloading mtbs_old/median_387
+File mtbs_old/median_388 does not exist
+Downloading mtbs_old/median_388
+File mtbs_old/median_400 does not exist
+Downloading mtbs_old/median_400
+File mtbs_old/median_457 does not exist
+Downloading mtbs_old/median_457
+File mtbs_old/median_417 does not exist
+Downloading mtbs_old/median_417
+File mtbs_old/median_455 does not exist
+Downloading mtbs_old/median_455
+File mtbs_old/median_456 does not exist
+Downloading mtbs_old/median_456
+File mtbs_old/median_459 does not exist
+Downloading mtbs_old/median_459
+File mtbs_old/median_477 does not exist
+Downloading mtbs_old/median_477
+File mtbs_old/median_413 does not exist
+Downloading mtbs_old/median_413
+File mtbs_old/median_458 does not exist
+Downloading mtbs_old/median_458
+File mtbs_old/median_478 does not exist
+Downloading mtbs_old/median_478
+File mtbs_old/median_503 does not exist
+Downloading mtbs_old/median_503
+File mtbs_old/median_496 does not exist
+Downloading mtbs_old/median_496
+File mtbs_old/median_504 does not exist
+Downloading mtbs_old/median_504
+File mtbs_old/median_506 does not exist
+Downloading mtbs_old/median_506
+File mtbs_old/median_576 does not exist
+Downloading mtbs_old/median_576
+File mtbs_old/median_577 does not exist
+Downloading mtbs_old/median_577
+File mtbs_old/median_497 does not exist
+Downloading mtbs_old/median_497
+File mtbs_old/median_578 does not exist
+Downloading mtbs_old/median_578
+File mtbs_old/median_507 does not exist
+Downloading mtbs_old/median_507
+File mtbs_old/median_508 does not exist
+Downloading mtbs_old/median_508
+File mtbs_old/median_505 does not exist
+Downloading mtbs_old/median_505
+File mtbs_old/median_510 does not exist
+Downloading mtbs_old/median_510
+File mtbs_old/median_579 does not exist
+Downloading mtbs_old/median_579
+File mtbs_old/median_509 does not exist
+Downloading mtbs_old/median_509
+File mtbs_old/median_566 does not exist
+Downloading mtbs_old/median_566
+File mtbs_old/median_641 does not exist
+Downloading mtbs_old/median_641
+File mtbs_old/median_623 does not exist
+Downloading mtbs_old/median_623
+File mtbs_old/median_738 does not exist
+Downloading mtbs_old/median_738
+File mtbs_old/median_732 does not exist
+Downloading mtbs_old/median_732
+File mtbs_old/median_735 does not exist
+Downloading mtbs_old/median_735
+File mtbs_old/median_761 does not exist
+Downloading mtbs_old/median_761
+File mtbs_old/median_759 does not exist
+Downloading mtbs_old/median_759
+File mtbs_old/median_829 does not exist
+Downloading mtbs_old/median_829
+File mtbs_old/median_1149 does not exist
+Downloading mtbs_old/median_1149
+File mtbs_old/median_1088 does not exist
+Downloading mtbs_old/median_1088
+File mtbs_old/median_1147 does not exist
+Downloading mtbs_old/median_1147
+File mtbs_old/median_1083 does not exist
+Downloading mtbs_old/median_1083
+File mtbs_old/median_1085 does not exist
+Downloading mtbs_old/median_1085

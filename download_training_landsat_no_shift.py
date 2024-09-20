@@ -140,15 +140,30 @@ def to_float(image):
 all_ids = ee.List(lfdb.distinct(["ID"]).aggregate_array("ID"))
 all_ids = all_ids.getInfo()
 
+# Specify the folder within your bucket
+folder_name = 'nbac_old'
+
 #loop through each fire polygon
 for i in all_ids:
 
     #name of output file
-    fname = f"median_{i}.tif"
+    # fname = f"median_{i}.tif"
+    fname = f"{folder_name}/median_{i}.tif"
+
+    fname2 = f"{folder_name}/median_{i}.tif.tif"
 
     #check if file exists on my bucket, if it does skip
-    stats = storage.Blob(bucket=bucket, name=fname).exists(storage_client)
-    if stats == False:
+    stats = storage.Blob(bucket=bucket, name=fname2).exists(storage_client)
+    
+    if stats:
+        print(f"File {fname} already exists in the bucket. Skipping...")
+
+    else:
+        print(f"File {fname} does not exist")
+
+    # #check if file exists on my bucket, if it does skip
+    # stats = storage.Blob(bucket=bucket, name=fname).exists(storage_client)
+    # if stats == False:
         
         #get the fire polygon of interest
         sub_shape = lfdb.filter(ee.Filter.eq("ID", i))
@@ -185,7 +200,7 @@ for i in all_ids:
         final_buffer = ee.Geometry.Polygon(bbox.coordinates(), proj).transform(proj)
         
         #this is a bit of a hack but we have two different bounding box sizes because when we export we need to use some additonal area to avoid cuttoffs
-        final_buffer2 = final_buffer.buffer(distance= 2000).bounds()
+        final_buffer2 = final_buffer.buffer(distance= 5000).bounds()
 
         final_buffer = final_buffer.buffer(distance= 40000)#.bounds().transform(proj='EPSG:3413', maxError=1)
     
@@ -541,7 +556,9 @@ for i in all_ids:
             b10 = y.select('y').cast({'y':'short'})
             
             #combine all the bands for predictors
-            raw_bands = b1.addBands(b2).addBands(b3).addBands(b4).addBands(b5).addBands(b6).addBands(b7).addBands(b8).addBands(b9)
+            # raw_bands = b1.addBands(b2).addBands(b3).addBands(b4).addBands(b5).addBands(b6).addBands(b7).addBands(b8).addBands(b9)
+            raw_bands = b7.addBands(b8).addBands(b9)
+
             
             #for areas where there are nearby fires or fires in previous years we set those to 0
             raw_bands = raw_bands.updateMask(bad_fire_rast.neq(1))
@@ -561,7 +578,8 @@ for i in all_ids:
                                     scale=30,
                                     crs='EPSG:3413',
                                     maxPixels=1e13,
-                                    bucket = 'smp-scratch')
+                                    bucket = 'smp-scratch',
+                                    fileNamePrefix=fname)
 
             task.start()
 

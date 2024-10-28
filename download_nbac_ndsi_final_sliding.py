@@ -23,7 +23,12 @@ from google.cloud import client
 
 sent_2A = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED") #sentinel 2
 s2Clouds = ee.ImageCollection('COPERNICUS/S2_CLOUD_PROBABILITY') #cloud masking for sentinel
-lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/nbac_1985") #anna polygons 
+# lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/nbac_1985") #anna polygons 
+lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/nbac_1986_2023") #nbac_fire_polygons, this can be any polygon shapefile, final version would be nbac and mtbs, this is nbac polygons
+# lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/ak_mtbs_1985") #nbac_fire_polygons, this can be any polygon shapefile, final version would be nbac and mtbs, this is mtbs polygons
+
+#filter year
+lfdb = lfdb.filter(ee.Filter.gt('Year', 2020));
 # lfdb_sub = ee.FeatureCollection("users/spotter/fire_cnn/anna_w_id_sampled") #anna polygons 
 
 #need to add ids to annas polygons
@@ -455,6 +460,9 @@ def get_pre_post(pre_start, pre_end, post_start, post_end, geometry):
 #get all the ids within the lfdb shapefile
 all_ids = ee.List(lfdb.distinct(["ID"]).aggregate_array("ID"))
 all_ids = all_ids.getInfo()
+
+#reverse the list
+# all_ids.reverse()
 
 # all_ids = [2460]
 

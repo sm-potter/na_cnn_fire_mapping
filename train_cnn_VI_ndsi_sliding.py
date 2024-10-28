@@ -5,12 +5,13 @@
 
 # In[21]:
 
-
+from __future__ import division
 import pandas as pd
 import logging, os
 logging.disable(logging.WARNING)
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["SM_FRAMEWORK"] = "tf.keras"
+print("XLA_FLAGS:", os.getenv("XLA_FLAGS"))
 import tensorflow
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.python.lib.io import file_io
@@ -28,6 +29,7 @@ from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.layers import Conv2D, Input, AvgPool2D
 from tensorflow.keras.models import Model
 from keras_unet_collection import models
+import geopandas as gpd
 # import tensorflow_addons as tfa
 import logging
 import time
@@ -35,13 +37,42 @@ import time
 # Record the start time
 start_time = time.time()
 
+# gpu_devices = tensorflow.config.experimental.list_physical_devices('GPU')
+# for device in gpu_devices:
+#     tensorflow.config.experimental.set_memory_growth(device, True)
 
 
-#minimum and maximum values to apply same normalization during draining
+
+
+# gpu_info = get_ipython().getoutput('nvidia-smi')
+# gpu_info = '\n'.join(gpu_info)
+# if gpu_info.find('failed') >= 0:
+#     print('Not connected to a GPU')
+# else:
+#     print(gpu_info)
+
+
 min_max = pd.read_csv("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_global_min_max_cutoff_proj.csv").reset_index(drop = True)
 
-#6, 7, 8 correspond to dNBR, dNDVI, dNDII, if you change these bands this must change. .
 min_max = min_max[['6', '7', '8']]
+
+print(min_max)
+#functin to standardize all bands at once
+
+
+#function to standardize
+def normalize_meanstd(a, axis=None): 
+    # axis param denotes axes along which mean & std reductions are to be performed
+    mean = np.mean(a, axis=axis, keepdims=True)
+    std = np.sqrt(((a - mean)**2).mean(axis=axis, keepdims=True))
+    return (a - mean) / std
+
+#function to normalize
+def normalize(a, axis=None): 
+    # axis param denotes axes along which mean & std reductions are to be performed
+    minv = np.min(a, axis=axis, keepdims=True)
+    maxv = np.max(a, axis=axis, keepdims=True)
+    return (a - minv) / (maxv - minv)
 
 
 #function to get files from storage bucket
@@ -66,30 +97,59 @@ def get_files(bucket_path):
 	return(all)
 
 
-#get all the pathways for mtbs., 128x128 chunks
-training_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_old_training_files.csv')['Files'].tolist()
-validation_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_old_validation_files.csv')['Files'].tolist()
-testing_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_old_testing_files.csv')['Files'].tolist()
-
-training_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_old_training_files.csv')['Files'].tolist()
-validation_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_old_validation_files.csv')['Files'].tolist()
-testing_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_old_testing_files.csv')['Files'].tolist()
+#get all the pathways
+training_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_monthly_ndsi_sliding_training_files.csv')['Files'].tolist()
+validation_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_monthly_ndsi_sliding_validation_files.csv')['Files'].tolist()
+testing_names = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_monthly_ndsi_sliding_testing_files.csv')['Files'].tolist()
 
 
-#combine
-training_names = training_names + training_names2 
+training_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_monthly_ndsi_sliding_training_files.csv')['Files'].tolist()
+validation_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_monthly_ndsi_sliding_validation_files.csv')['Files'].tolist()
+testing_names2 = pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/mtbs_monthly_ndsi_sliding_testing_files.csv')['Files'].tolist()
+
+
+# good_ids= pd.read_csv('/explore/nobackup/people/spotter5/cnn_mapping/raw_files/ak_ca_1985_clip.csv')
+
+
+# def get_good(in_list, good_frame):
+    
+#     final = []
+#     for i in in_list:
+
+#         try:
+
+#             in_id = int(i.split('/')[-1].split('_')[2].replace('.npy', ''))
+
+#             if in_id in good_frame['ID']:
+
+#                 final.append(i)
+#         except:
+#             pass
+        
+#     return final
+
+# training_names = get_good(training_names, good_ids)
+# validation_names = get_good(validation_names, good_ids)
+# testing_names = get_good(testing_names, good_ids)
+
+training_names = training_names + training_names2
 validation_names = validation_names + validation_names2
 testing_names = testing_names + testing_names2
 
-#scale 0-1
+
 from sklearn.preprocessing import MinMaxScaler
 # from sklearn.preprocessing import StandardScaler
 
 scaler = MinMaxScaler()
 
+#function to normalize within range
+def normalize(start, end, arr):
+    width = end - start
+    res = (arr - np.nanmin(arr))/(np.nanmax(arr)- np.nanmin(arr)) * width + start
 
-#image generator for 3 bands, some pre processing here to turn nan to 0, ensure the min-max values are used for normalization.  
-#the numpy arrays have bands red, green, blue, nir, swir1, swir2, dNBR, dNDVI, dNDII, y. 
+#     res = (arr - arr.min())/(arr.max() - arr.min()) * width + start
+    return res
+
 class img_gen(tensorflow.keras.utils.Sequence):
 
     """Helper to iterate over the data (as Numpy arrays).
@@ -120,17 +180,9 @@ class img_gen(tensorflow.keras.utils.Sequence):
          #start populating x by enumerating over the input img paths
         for j, path in enumerate(batch_img_paths):
 
-           #load image
-            img =  np.round(np.load(path), 3)
-      
-            if img.shape[2] == 4:
-                img = img[:, :, :-1]
+            #load image
+            img =  np.round(np.load(path), 3)[:, :, :-1]
 
-                
-            else:
-                
-                img = img[:, :, 6:9]
-                
             # img = img * 1000
             img = img.astype(float)
             img = np.round(img, 3)
@@ -189,16 +241,50 @@ class img_gen(tensorflow.keras.utils.Sequence):
             img[np.isnan(img)] = 0
             img = img.astype(int)
 
+            # img =  tf.keras.utils.to_categorical(img, num_classes = 2)
+            # y[j] = np.expand_dims(img, 2) 
             y[j] = img
   
        
+    #Ground truth labels are 1, 2, 3. Subtract one to make them 0, 1, 2:
+    # y[j] -= 1
 
         return x, y
 
 
+# Read in the images based on the generator
+
+# In[24]:
+
+
+#Initialize GPUS with tensorflow
+
+
+# In[2]:
+
+
+gpu_devices = tensorflow.config.experimental.list_physical_devices('GPU')
+for device in gpu_devices:
+    tensorflow.config.experimental.set_memory_growth(device, True)
+
+
+
+
+# gpu_info = get_ipython().getoutput('nvidia-smi')
+# gpu_info = '\n'.join(gpu_info)
+# if gpu_info.find('failed') >= 0:
+#     print('Not connected to a GPU')
+# else:
+#     print(gpu_info)
+    
+# # watch -n0.5 nvidia-smi
+
+# from tensorflow.python.client import device_lib
+# devices = device_lib.list_local_devices()
 
 
 #batch size and img size
+#15 before
 BATCH_SIZE = 45
 GPUS = ["GPU:0", "GPU:1", "GPU:2", "GPU:3"]
 strategy = tensorflow.distribute.MirroredStrategy() #can add GPUS here to select specific ones
@@ -206,8 +292,11 @@ print('Number of devices: %d' % strategy.num_replicas_in_sync)
 
 batch_size = BATCH_SIZE * strategy.num_replicas_in_sync
 
+
+
 #image size
 img_size = (128, 128)
+# img_size = (128, 128)
 
 #number of classes to predict
 num_classes = 1
@@ -216,31 +305,54 @@ num_classes = 1
 train_gen = img_gen(batch_size, img_size, training_names)
 val_gen = img_gen(batch_size, img_size, validation_names)
 test_gen = img_gen(batch_size, img_size, testing_names)
-
+#
 
 # Free up RAM in case the model definition cells were run multiple times
 tensorflow.keras.backend.clear_session()
 
-#set learning rate
-LR = 1e-3
 
-
-optimizer = tensorflow.keras.optimizers.Adam(learning_rate=LR) #this is 1e-3, default or 'rmsprop'
+optimizer = tensorflow.keras.optimizers.Adam() #this is 1e-3, default or 'rmsprop'
+LR = 0.0005
     
-#callbacks to save only best model, what to monitor for early stopping and reduce learning rate etc. 
+loss= tensorflow.keras.losses.BinaryFocalCrossentropy(
+    from_logits=False,
+    gamma = 2.0,
+    alpha = 0.25)
+
+# f.keras.losses.BinaryFocalCrossentropy(gamma=2.0, alpha=0.25)
+# loss = tensorflow.keras.losses.BinaryFocalCrossentropy(
+#     apply_class_balancing=False,
+#     alpha=0.25,
+#     gamma=2.0,
+#     from_logits=False,
+#     label_smoothing=0.0,
+#     axis=-1,
+#     reduction=losses_utils.ReductionV2.AUTO,
+#     name='binary_focal_crossentropy'
+# )
+
+
+
 callbacks = [tensorflow.keras.callbacks.ModelCheckpoint(
-    filepath="/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm_old",
+    filepath=f"/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_ndsi_sliding",
 #     verbose=1,
     save_weights_only=False,
     save_best_only=True,
-    monitor='val_unet_output_final_activation_iou_score',
+       monitor='val_unet_output_final_activation_iou_score',
     mode = 'max'),
     tensorflow.keras.callbacks.EarlyStopping(monitor='val_unet_output_final_activation_iou_score', mode = 'max',  patience=20),
     tensorflow.keras.callbacks.ReduceLROnPlateau(monitor='val_unet_output_final_activation_loss', factor=0.5, patience=5, min_lr=1e-6, verbose=1)]
 
-#training loop
-# Open a strategy scope, to use multiple gpus
+
+# Open a strategy scope.
 with strategy.scope():
+    
+    #one [16,32,64,128]
+    #two [16,32,64,128,256]
+    #three [32,64,128,256]
+    #four [32,64,128,256,512]
+    #five [16,32,64,128,256,512,1024]
+
 
     model_unet_from_scratch = models.unet_plus_2d((None, None, 3), filter_num= [16,32,64,128], #make smaller64, 128, 256, 512,[16, 32, 64, 128]
                        n_labels=num_classes, 
@@ -253,7 +365,16 @@ with strategy.scope():
                        deep_supervision = True,
                        name='unet')
 
+    # model_unet_from_scratch = models.unet_3plus_2d((None, None, 1), n_labels=num_classes, filter_num_down=[16,32,64,128], 
+    #                          filter_num_skip='auto', filter_num_aggregate='auto', 
+    #                         backbone='EfficientNetB7', weights=None, 
+    #                          freeze_backbone=False,
+    #                          stack_num_down=2, stack_num_up=1, activation='ReLU', output_activation='Sigmoid',
+    #                          batch_norm=True, pool='max', unpool=False, deep_supervision=True, name='unet')
+	
+#     model.set_weights(listOfNumpyArrays)
     model_unet_from_scratch.compile(loss='binary_crossentropy',
+                                    # loss = loss,
                                     optimizer='adam',
                                     metrics=[sm.metrics.Precision(threshold=0.5),
                                       sm.metrics.Recall(threshold=0.5),
@@ -264,18 +385,29 @@ with strategy.scope():
 #fit the model
 history = model_unet_from_scratch.fit(
     train_gen,
-    epochs=50,
+    epochs=15,
     callbacks = callbacks,
     validation_data=val_gen,
     verbose = 0) 
 
-#save final model
-model_unet_from_scratch.save("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_regularize_50_global_norm_old.tf")
+# model_unet_from_scratch.save("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/l8_sent_collection2_079_128.h5")
+model_unet_from_scratch.save("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/models/nbac_mtbs_ndsi_sliding.tf")
 
 
 history_dict = history.history
 
-#training/val results
+#save output
+# result = pd.DataFrame({'Precision': history_dict["precision"],
+#                        'Val_Precision': history_dict['val_precision'],
+#                        'Recall': history_dict["recall"],
+#                        'Val_Recall': history_dict['recall'],
+#                        'F1': history_dict["f1-score"],
+#                        'Val_F1': history_dict['val_f1-score'],
+#                        'IOU': history_dict["iou_score"],
+#                        'Val_IOU': history_dict['val_iou_score'],
+#                        'Loss': history_dict['loss'],
+#                        'Val_Loss': history_dict['val_loss']})
+
 result = pd.DataFrame({'Precision': history_dict["unet_output_final_activation_precision"],
                        'Val_Precision': history_dict['val_unet_output_final_activation_precision'],
                        'Recall': history_dict["unet_output_final_activation_recall"],
@@ -289,9 +421,8 @@ result = pd.DataFrame({'Precision': history_dict["unet_output_final_activation_p
                       'Accuracy': history_dict['unet_output_final_activation_accuracy'],
                        'Val_Accuracy': history_dict['val_unet_output_final_activation_accuracy']})
 
-#save to csv
-result.to_csv("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_mtbs_regularize_50_global_norm_old.csv")
 
+result.to_csv("/explore/nobackup/people/spotter5/cnn_mapping/nbac_training/nbac_mtbs_ndsi_sliding.csv")
 
 
 

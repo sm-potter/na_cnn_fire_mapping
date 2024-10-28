@@ -18,8 +18,12 @@ ee.Initialize()
 
 sent_2A = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED") #sentinel 2
 s2Clouds = ee.ImageCollection('COPERNICUS/S2_CLOUD_PROBABILITY') #cloud masking for sentinel
-lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/nbac_1985") #nbac_fire_polygons, this can be any polygon shapefile, final version would be nbac and mtbs, this is nbac polygons
+lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/nbac_1986_2023") #nbac_fire_polygons, this can be any polygon shapefile, final version would be nbac and mtbs, this is nbac polygons
 # lfdb = ee.FeatureCollection("users/spotter/fire_cnn/raw/ak_mtbs_1985") #nbac_fire_polygons, this can be any polygon shapefile, final version would be nbac and mtbs, this is mtbs polygons
+
+#filter year
+var lfdb = lfdb.filter(ee.Filter.gt('Year', 2020));
+
 
 
 #probability of clouds
